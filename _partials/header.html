@@ -1,0 +1,159 @@
+<header
+  class="main-header bg-dark-blue h-[90px] flex items-center sticky top-0 z-50 w-full transition-shadow duration-300 ease-in-out px-5 md:px-10 lg:px-[110px]"
+>
+  <div
+    class="flex justify-between items-center w-full max-w-[1220px] mx-auto"
+  >
+    <a href="/home_page/index.html" class="logo">
+      <img
+        src="/images/logo_idn.png"
+        alt="IDN Boarding School Logo"
+        class="h-[50px] transition-transform duration-300 ease-in-out hover:scale-110"
+      />
+    </a>
+    <nav id="main-nav" class="main-nav hidden lg:flex items-center gap-4">
+      <a
+        href="/home_page/index.html"
+        class="text-white text-lg font-normal flex items-center gap-2 py-3 px-3.5 rounded-lg transition-all duration-300 ease-in-out relative hover:bg-white/10 hover:-translate-y-0.5"
+        >Beranda</a
+      >
+      <a
+        href="/ppdb/ppdb.html"
+        class="text-white text-lg font-normal flex items-center gap-2 py-3 px-3.5 rounded-lg transition-all duration-300 ease-in-out relative hover:bg-white/10"
+        >PPDB</a
+      >
+
+      <div class="relative group">
+        <a
+          href="#"
+          class="text-white text-lg font-normal flex items-center gap-2 py-3 px-3.5 rounded-lg transition-all duration-300 ease-in-out relative hover:bg-white/10 hover:-translate-y-0.5"
+        >
+          Kurikulum
+          <img
+            src="/images/I8931_31074_8931_30754_8039_20104.svg"
+            alt="dropdown"
+            class="w-6 h-6 transition-transform duration-300 ease-in-out group-hover:rotate-180"
+          />
+        </a>
+        <div
+          class="dropdown-menu absolute top-full mt-2 w-48 bg-dark-blue rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0"
+        >
+          <a
+            href="/Akademik_Smp/kurikulumsmp.html"
+            class="block px-5 py-3 text-white hover:bg-primary-blue rounded-t-lg"
+            >SMP</a
+          >
+          <a
+            href="/Akademik_Smk/index.html"
+            class="block px-5 py-3 text-white hover:bg-primary-blue rounded-b-lg"
+            >SMK</a
+          >
+        </div>
+      </div>
+
+      <div class="relative group">
+        <a
+          href="#"
+          class="text-white text-lg font-normal flex items-center gap-2 py-3 px-3.5 rounded-lg transition-all duration-300 ease-in-out relative hover:bg-white/10 hover:-translate-y-0.5"
+        >
+          Program
+          <img
+            src="/images/I8931_31074_8931_30755_8039_20104.svg"
+            alt="dropdown"
+            class="w-6 h-6 transition-transform duration-300 ease-in-out group-hover:rotate-180"
+          />
+        </a>
+        <div
+          class="dropdown-menu absolute top-full mt-2 w-56 bg-dark-blue rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0"
+        >
+          <a
+            href="#"
+            class="block px-5 py-3 text-white hover:bg-primary-blue rounded-t-lg"
+            >Backpacker</a
+          >
+          <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue"
+            >Ekstrakurikuler</a
+          >
+          <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue"
+            >Internasional</a
+          >
+          <a href="/program/idn_mengajar.html" class="block px-5 py-3 text-white hover:bg-primary-blue"
+            >IDN Mengajar</a
+          >
+          <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue"
+            >Live In</a
+          >
+          <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue"
+            >Business Survival</a
+          >
+          <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue"
+            >Edurace</a
+          >
+          <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue"
+            >IDN Bersyukur</a
+          >
+          <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue"
+            >LDKS</a
+          >
+          <a
+            href="#"
+            class="block px-5 py-3 text-white hover:bg-primary-blue rounded-b-lg"
+            >IT Camp</a
+          >
+        </div>
+      </div>
+
+      <a
+        href="/artikel/index.html"
+        class="text-white text-lg font-normal flex items-center gap-2 py-3 px-3.5 rounded-lg transition-all duration-300 ease-in-out relative hover:bg-white/10 hover:-translate-y-0.5"
+        >Artikel</a
+      >
+      <a
+        href="https://api.whatsapp.com/send?phone=6282116653328"
+        target="_blank"
+        class="text-white text-lg font-normal flex items-center gap-2 py-3 px-3.5 rounded-lg transition-all duration-300 ease-in-out relative hover:bg-white/10 hover:-translate-y-0.5"
+        >Kontak</a
+      >
+    </nav>
+    <button
+      class="mobile-nav-toggle block lg:hidden bg-none border-none cursor-pointer z-50"
+    >
+      <span class="block w-[25px] h-[3px] bg-white my-[5px]"></span>
+      <span class="block w-[25px] h-[3px] bg-white my-[5px]"></span>
+      <span class="block w-[25px] h-[3px] bg-white my-[5px]"></span>
+    </button>
+  </div>
+</header>
+
+<div
+  id="mobile-menu"
+  class="fixed top-0 left-0 w-full h-full bg-dark-blue/95 backdrop-blur-sm z-40 flex items-center justify-center opacity-0 invisible transition-all duration-500 -translate-x-full"
+>
+  <nav class="flex flex-col items-center gap-8 text-center">
+    <a href="/home_page/index.html" class="mobile-link text-white text-3xl font-bold"
+      >Beranda</a
+    >
+    <a href="/ppdb.html" class="mobile-link text-white text-3xl font-bold"
+      >PPDB</a
+    >
+    <a
+      href="/Akademik_Smp/kurikulumsmp.html"
+      class="mobile-link text-white text-3xl font-bold"
+      >Kurikulum</a
+    >
+    <a href="#" class="mobile-link text-white text-3xl font-bold"
+      >Program</a
+    >
+    <a
+      href="/artikel/index.html"
+      class="mobile-link text-white text-3xl font-bold"
+      >Artikel</a
+    >
+    <a
+      href="https://api.whatsapp.com/send?phone=6282116653328"
+      target="_blank"
+      class="mobile-link text-white text-3xl font-bold"
+      >Kontak</a
+    >
+  </nav>
+</div>

@@ -11,6 +11,8 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <script src="/js/loader.js" defer></script>
+
 </head>
 <body class="font-figtree bg-white text-text-dark overflow-x-hidden">
 
@@ -19,111 +21,8 @@
   <div class="cursor-follower"></div>
 
   <div class="w-full mx-auto relative">
-    <header class="main-header bg-dark-blue h-[90px] flex items-center sticky top-0 z-50 w-full transition-shadow duration-300 ease-in-out px-5 md:px-10 lg:px-[110px]">
-      <div class="flex justify-between items-center w-full max-w-[1220px] mx-auto">
-        <a href="#" class="logo">
-          <img src="../images/logo_idn.png" alt="IDN Boarding School Logo" class="h-[50px] transition-transform duration-300 ease-in-out hover:scale-110">
-        </a>
-        <nav class="main-nav hidden lg:flex items-center gap-4">
-  <a href="#hero-about" class="text-white text-lg font-bold flex items-center gap-2 py-3 px-3.5 rounded-lg transition-all duration-300 ease-in-out relative hover:bg-white/10 hover:-translate-y-0.5">Beranda</a>
-  <a href="ppdb.html" class="text-white text-lg font-normal flex items-center gap-2 py-3 px-3.5 rounded-lg transition-all duration-300 ease-in-out relative hover:bg-white/10 hover:-translate-y-0.5">PPDB</a>
-  
-  <div class="relative group">
-    <a href="#" class="text-white text-lg font-normal flex items-center gap-2 py-3 px-3.5 rounded-lg transition-all duration-300 ease-in-out relative hover:bg-white/10 hover:-translate-y-0.5">
-      Kurikulum 
-      <img src="../images/I8931_31074_8931_30754_8039_20104.svg" alt="dropdown" class="w-6 h-6 transition-transform duration-300 ease-in-out group-hover:rotate-180">
-    </a>
-    <div class="dropdown-menu absolute top-full mt-2 w-48 bg-dark-blue rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0">
-      <a href="../Akademik_Smp/kurikulumsmp.html" class="block px-5 py-3 text-white hover:bg-primary-blue rounded-t-lg">SMP</a>
-      <a href="..Akademik_Smk/index.html" class="block px-5 py-3 text-white hover:bg-primary-blue rounded-b-lg">SMK</a>
-    </div>
-  </div>
 
-  <div class="relative group">
-    <a href="#projects" class="text-white text-lg font-normal flex items-center gap-2 py-3 px-3.5 rounded-lg transition-all duration-300 ease-in-out relative hover:bg-white/10 hover:-translate-y-0.5">
-      Program 
-      <img src="../images/I8931_31074_8931_30755_8039_20104.svg" alt="dropdown" class="w-6 h-6 transition-transform duration-300 ease-in-out group-hover:rotate-180">
-    </a>
-    <div class="dropdown-menu absolute top-full mt-2 w-56 bg-dark-blue rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0">
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue rounded-t-lg">Backpacker</a>
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue">Ekstrakurikuler</a>
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue">Internasional</a>
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue">IDN Mengajar</a>
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue">Live In</a>
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue">Business Survival</a>
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue">Edurace</a>
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue">IDN Bersyukur</a>
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue">LDKS</a>
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue rounded-b-lg">IT Camp</a>
-    </div>
-  </div>
-
-  <a href="../artikel/index.html" class="text-white text-lg font-normal flex items-center gap-2 py-3 px-3.5 rounded-lg transition-all duration-300 ease-in-out relative hover:bg-white/10 hover:-translate-y-0.5">Artikel</a>
-  <a href="https://api.whatsapp.com/send?phone=6282116653328" target="_blank" class="text-white text-lg font-normal flex items-center gap-2 py-3 px-3.5 rounded-lg transition-all duration-300 ease-in-out relative hover:bg-white/10 hover:-translate-y-0.5">Kontak</a>
-</nav>
-<button class="mobile-nav-toggle block lg:hidden bg-none border-none cursor-pointer z-50">
-  <span class="block w-[25px] h-[3px] bg-white my-[5px]"></span>
-  <span class="block w-[25px] h-[3px] bg-white my-[5px]"></span>
-  <span class="block w-[25px] h-[3px] bg-white my-[5px]"></span>
-</button>
-      </div>
-    </header>
-
-    <div id="mobile-menu" 
-     class="fixed top-0 left-0 w-full h-full bg-dark-blue/95 backdrop-blur-sm z-40 flex flex-col items-center justify-center opacity-0 invisible transition-all duration-500 -translate-x-full overflow-y-auto p-10">
-  <nav class="flex flex-col items-center gap-6 text-center w-full">
-
-    <a href="#" class="mobile-link text-white text-3xl font-bold underline underline-offset-8">Beranda</a>
-    <a href="../ppdb/ppdb.html" class="mobile-link text-white text-3xl font-bold">PPDB</a>
-
-    <!-- KURIKULUM DROPDOWN -->
-    <div class="w-full flex flex-col items-center">
-      <button onclick="toggleDropdown('kurikulum')" 
-              class="flex items-center justify-center text-white text-3xl font-bold gap-2">
-        Kurikulum
-        <img src="../images/I8931_31074_8931_30754_8039_20104.svg" 
-             alt="dropdown" 
-             class="w-6 h-6 transition-transform duration-300 ease-in-out" 
-             id="arrow-kurikulum">
-      </button>
-
-      <div id="dropdown-kurikulum" 
-           class="w-4/5 sm:w-64 bg-white/10 rounded-lg mt-5 shadow-lg flex flex-col overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out">
-        <a href="../Akademik_Smp/kurikulumsmp.html" class="block px-5 py-3 text-white hover:bg-light-blue">SMP</a>
-        <a href="../Akademik_Smk/index.html" class="block px-5 py-3 text-white hover:bg-light-blue">SMK</a>
-      </div>
-    </div>
-
-    <!-- PROGRAM DROPDOWN -->
-    <div class="w-full flex flex-col items-center">
-      <button onclick="toggleDropdown('program')" 
-              class="flex items-center justify-center text-white text-3xl font-bold gap-2">
-        Program
-        <img src="../images/I8931_31074_8931_30754_8039_20104.svg" 
-             alt="dropdown" 
-             class="w-6 h-6 transition-transform duration-300 ease-in-out"
-             id="arrow-program">
-      </button>
-
-      <div id="dropdown-program" 
-           class="w-4/5 sm:w-72 bg-white/10 mt-5 rounded-lg shadow-lg flex flex-col overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out">
-        <a href="#" class="block px-5 py-3 text-white hover:bg-light-blue">Backpacker</a>
-        <a href="#" class="block px-5 py-3 text-white hover:bg-light-blue">Ekstrakurikuler</a>
-        <a href="#" class="block px-5 py-3 text-white hover:bg-light-blue">Internasional</a>
-        <a href="#" class="block px-5 py-3 text-white hover:bg-light-blue">IDN Mengajar</a>
-        <a href="#" class="block px-5 py-3 text-white hover:bg-light-blue">Live In</a>
-        <a href="#" class="block px-5 py-3 text-white hover:bg-light-blue">Business Survival</a>
-        <a href="#" class="block px-5 py-3 text-white hover:bg-light-blue">Edurace</a>
-        <a href="#" class="block px-5 py-3 text-white hover:bg-light-blue">IDN Bersyukur</a>
-        <a href="#" class="block px-5 py-3 text-white hover:bg-light-blue">LDKS</a>
-        <a href="#" class="block px-5 py-3 text-white hover:bg-light-blue">IT Camp</a>
-      </div>
-    </div>
-
-    <a href="../artikel/index.html" class="mobile-link text-white text-3xl font-bold">Artikel</a>
-    <a href="https://api.whatsapp.com/send?phone=6282116653328" target="_blank" class="mobile-link text-white text-3xl font-bold">Kontak</a>
-  </nav>
-</div>
+    <div id="header-placeholder"></div>
 
     <main>
       <section id="hero-about" class="relative overflow-hidden bg-gradient-to-br from-[#0025ba] to-[#5879ff] text-white pt-16 pb-10 flex flex-col items-center">
@@ -133,18 +32,18 @@
         </div>
         <div class="container w-full w-full mx-auto px-5 box-border flex flex-col items-center gap-4 pb-[120px] text-center">
           <div class="tag relative z-10 inline-flex justify-center items-center py-2 px-4 rounded-full bg-primary-blue text-white border border-white transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-fade-in">
-            <img src="../images/8836_780.svg" alt="star icon" class="mr-2">
+            <img src="/images/8836_780.svg" alt="star icon" class="mr-2">
             <span class="font-semibold text-base leading-6">Sekolah IT Terbaik di Indonesia</span>
           </div>
           <div class="hero-title-group relative z-10 mt-4 animate-on-scroll" style="text-shadow: 0px 24px 52px rgba(0, 0, 0, 0.1);">
             <h1 class="hero-title font-poppins font-bold text-6xl md:text-[96px] lg:text-[128px] leading-tight bg-gradient-to-tr from-[#f5f9ff] to-[#c0dbff] bg-clip-text text-transparent">JAGOAN IT</h1>
             <h1 class="hero-title font-poppins font-bold text-6xl md:text-[96px] lg:text-[128px] leading-tight bg-gradient-to-tr from-[#f5f9ff] to-[#c0dbff] bg-clip-text text-transparent">PINTER NGAJI</h1>
           </div>
-          <img src="../images/8836_785.svg" alt="decorative line" class="relative z-10 -mt-[30px] -mb-[10px] animate-fade-in">
+          <img src="/images/8836_785.svg" alt="decorative line" class="relative z-10 -mt-[30px] -mb-[10px] animate-fade-in">
           <p class="hero-subtitle relative z-10 font-medium text-lg md:text-2xl leading-relaxed max-w-[870px] mt-4 animate-on-scroll">Merupakan slogan dari IDN Boarding School yang mana bukan berarti hanya expert ilmu IT tetapi ilmu akhirat.</p>
           <div class="hero-buttons relative z-10 flex flex-col md:flex-row gap-4 md:gap-8 mt-6 animate-on-scroll">
-            <a href="#registration" class="btn bg-white text-primary-blue border-2 border-primary-blue inline-flex justify-center items-center gap-2.5 py-3 md:py-3.5 px-6 md:px-7 rounded-xl font-semibold text-base md:text-lg cursor-pointer transition-all duration-300 ease-in-out relative overflow-hidden hover:-translate-y-1 hover:shadow-lg active:-translate-y-px">Daftar Sekarang <img src="../images/I8836_791_6048_64342.svg" alt="arrow right"></a>
-            <a href="#why-idn" class="btn bg-primary-blue border-2 border-white inline-flex justify-center items-center gap-2.5 py-3 md:py-3.5 px-6 md:px-7 rounded-xl font-semibold text-base md:text-lg cursor-pointer transition-all duration-300 ease-in-out relative overflow-hidden hover:-translate-y-1 hover:shadow-lg active:-translate-y-px">Selengkapnya <img src="../images/I8836_792_6048_64342.svg" alt="arrow right"></a>
+            <a href="#registration" class="btn bg-white text-primary-blue border-2 border-primary-blue inline-flex justify-center items-center gap-2.5 py-3 md:py-3.5 px-6 md:px-7 rounded-xl font-semibold text-base md:text-lg cursor-pointer transition-all duration-300 ease-in-out relative overflow-hidden hover:-translate-y-1 hover:shadow-lg active:-translate-y-px">Daftar Sekarang <img src="/images/I8836_791_6048_64342.svg" alt="arrow right"></a>
+            <a href="#why-idn" class="btn bg-primary-blue border-2 border-white inline-flex justify-center items-center gap-2.5 py-3 md:py-3.5 px-6 md:px-7 rounded-xl font-semibold text-base md:text-lg cursor-pointer transition-all duration-300 ease-in-out relative overflow-hidden hover:-translate-y-1 hover:shadow-lg active:-translate-y-px">Selengkapnya <img src="/images/I8836_792_6048_64342.svg" alt="arrow right"></a>
           </div>
           <div class="scroll-indicator relative z-10 flex flex-col items-center gap-1 mt-6 text-xs animate-fade-in">
             <div class="mouse-icon w-[26px] h-[38px] border-3 border-white rounded-[21px] relative">
@@ -156,7 +55,7 @@
         <div class="container md:flex-col-reverse sm:flex-col-reverse w-full w-full mx-auto px-5 mb-10 box-border flex flex-col lg:flex-row justify-between items-center gap-[50px]">
             <div class="about-us-content flex flex-col gap-[30px] items-start flex-1 animate-slide-left">
               <div class="tag inline-flex justify-center items-center py-2 px-4 rounded-full bg-primary-blue text-white border border-white transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)]">
-                <img src="../images/8836_801.svg" alt="graduation cap icon" class="mr-2">
+                <img src="/images/8836_801.svg" alt="graduation cap icon" class="mr-2">
                 <span class="tag-text font-semibold text-base leading-6">Tentang Kami</span>
               </div>
               <h2 class="font-poppins font-bold text-4xl md:text-5xl leading-tight text-left text-white">IDN BOARDING SCHOOL</h2>
@@ -171,10 +70,10 @@
                   <p class="text-2xl font-medium leading-loose">Penghasilan Siswa</p>
                 </div>
               </div>
-              <a href="#" class="btn border-2 border-white border-2 border-primary-blue inline-flex justify-center items-center gap-2.5 py-3 md:py-3.5 px-6 md:px-7 rounded-xl font-semibold md:text-lg cursor-pointer transition-all duration-300 ease-in-out relative overflow-hidden hover:-translate-y-1 hover:shadow-lg active:-translate-y-px">Selengkapnya <img src="../images/I8836_814_6048_64342.svg" alt="arrow right" class="brightness-200"></a>
+              <a href="#" class="btn border-2 border-white border-2 border-primary-blue inline-flex justify-center items-center gap-2.5 py-3 md:py-3.5 px-6 md:px-7 rounded-xl font-semibold md:text-lg cursor-pointer transition-all duration-300 ease-in-out relative overflow-hidden hover:-translate-y-1 hover:shadow-lg active:-translate-y-px">Selengkapnya <img src="/images/I8836_814_6048_64342.svg" alt="arrow right" class="brightness-200"></a>
             </div>
             <div class="about-us-image flex-shrink-0 lg:w-[500px] overflow-hidden rounded-[20px] w-full animate-slide-right">
-              <img src="../images/2b8c03cb71984e1e9f7677eb495efb3be53bc449.png" alt="IDN Boarding School campus" class="w-full h-auto md:h-[500px] object-cover rounded-[20px] transition-transform duration-500 ease-in-out hover:scale-110">
+              <img src="/images/2b8c03cb71984e1e9f7677eb495efb3be53bc449.png" alt="IDN Boarding School campus" class="w-full h-auto md:h-[500px] object-cover rounded-[20px] transition-transform duration-500 ease-in-out hover:scale-110">
             </div>
           </div>
       </section>
@@ -341,9 +240,9 @@
             <h2 class="font-poppins font-bold text-4xl md:text-5xl text-center animate-fade-in">Jurusan di IDN Boarding School</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px] w-full">
                 <div class="major-card bg-white text-text-dark rounded-xl overflow-hidden shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] flex flex-col transition-all duration-300 ease-in-out hover:-translate-y-2.5 hover:shadow-[0px_15px_40px_rgba(0,0,0,0.25)] animate-on-scroll group">
-                    <div class="overflow-hidden"><img src="../images/b674864028bdb49b7c607bd068688fc34c0b5296.png" alt="Desain Komunikasi Visual" class="w-full h-[200px] object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"></div>
+                    <div class="overflow-hidden"><img src="/images/b674864028bdb49b7c607bd068688fc34c0b5296.png" alt="Desain Komunikasi Visual" class="w-full h-[200px] object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"></div>
                     <div class="p-4 flex flex-col gap-5 flex-grow">
-                        <div class="card-icon-btn bg-primary-blue w-10 h-10 rounded-lg flex justify-center items-center transition-all duration-300 ease-in-out group-hover:rotate-360 group-hover:bg-accent-orange"><img src="../images/I8836_669_6048_65286.svg" alt="pen tool icon"></div>
+                        <div class="card-icon-btn bg-primary-blue w-10 h-10 rounded-lg flex justify-center items-center transition-all duration-300 ease-in-out group-hover:rotate-360 group-hover:bg-accent-orange"><img src="/images/I8836_669_6048_65286.svg" alt="pen tool icon"></div>
                         <h3 class="text-lg font-semibold leading-7">Desain Komunikasi Visual</h3>
                         <p class="text-sm font-medium leading-5 text-text-gray flex-grow">DKV (Desain Komunikasi Visual) bukan cuma soal estetika, tapi juga soal komunikasi. Kamu diajak untuk berpikir kreatif, peka terhadap tren, dan bisa bikin karya yang punya makna.</p>
                         <div class="flex flex-wrap gap-4">
@@ -356,9 +255,9 @@
                     </div>
                 </div>
                 <div class="major-card bg-white text-text-dark rounded-xl overflow-hidden shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] flex flex-col transition-all duration-300 ease-in-out hover:-translate-y-2.5 hover:shadow-[0px_15px_40px_rgba(0,0,0,0.25)] animate-on-scroll group">
-                     <div class="overflow-hidden"><img src="../images/6076aa123084b5d727ee281f346af9dfc55a4b32.png" alt="Rekayasa Perangkat Lunak" class="w-full h-[200px] object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"></div>
+                     <div class="overflow-hidden"><img src="/images/6076aa123084b5d727ee281f346af9dfc55a4b32.png" alt="Rekayasa Perangkat Lunak" class="w-full h-[200px] object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"></div>
                      <div class="p-4 flex flex-col gap-5 flex-grow">
-                        <div class="card-icon-btn bg-primary-blue w-10 h-10 rounded-lg flex justify-center items-center transition-all duration-300 ease-in-out group-hover:rotate-360 group-hover:bg-accent-orange"><img src="../images/I8836_682_6048_65286.svg" alt="code icon"></div>
+                        <div class="card-icon-btn bg-primary-blue w-10 h-10 rounded-lg flex justify-center items-center transition-all duration-300 ease-in-out group-hover:rotate-360 group-hover:bg-accent-orange"><img src="/images/I8836_682_6048_65286.svg" alt="code icon"></div>
                         <h3 class="text-lg font-semibold leading-7">Rekayasa Perangkat Lunak</h3>
                         <p class="text-sm font-medium leading-5 text-text-gray flex-grow">RPL (Rekayasa Perangkat Lunak) bukan cuma soal ngoding, tapi juga soal logika dan solusi. Kamu diajak untuk berpikir sistematis, bikin aplikasi web dan mobile pakai PHP, MySQL, Laravel, sampai Flutter.</p>
                         <div class="flex flex-wrap gap-4">
@@ -367,13 +266,13 @@
                             <span class="skill-tag bg-background-gray text-text-gray text-xs font-medium py-1.5 px-2.5 rounded-full transition-all duration-300 ease-in-out hover:bg-primary-blue hover:text-white hover:scale-110">Flutter</span>
                             <span class="skill-tag bg-background-gray text-text-gray text-xs font-medium py-1.5 px-2.5 rounded-full transition-all duration-300 ease-in-out hover:bg-primary-blue hover:text-white hover:scale-110">Laravel</span>
                         </div>
-                        <a href="../Akademik_Smk/index.html#rpl-page" class="card-btn mt-auto bg-primary-blue text-white text-center py-3 px-4.5 rounded-[10px] text-sm font-semibold transition-all duration-300 ease-in-out hover:bg-accent-orange hover:-translate-y-0.5 hover:shadow-[0_4px_15px_rgba(245,158,11,0.4)]">Selengkapnya</a>
+                        <a href="/Akademik_Smk/index.html#rpl-page" class="card-btn mt-auto bg-primary-blue text-white text-center py-3 px-4.5 rounded-[10px] text-sm font-semibold transition-all duration-300 ease-in-out hover:bg-accent-orange hover:-translate-y-0.5 hover:shadow-[0_4px_15px_rgba(245,158,11,0.4)]">Selengkapnya</a>
                     </div>
                 </div>
                 <div class="major-card bg-white text-text-dark rounded-xl overflow-hidden shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] flex flex-col transition-all duration-300 ease-in-out hover:-translate-y-2.5 hover:shadow-[0px_15px_40px_rgba(0,0,0,0.25)] animate-on-scroll group">
-                     <div class="overflow-hidden"><img src="../images/1e1d4f6dd593842c5de0c76f506f44435769218f.png" alt="Teknik Komputer Jaringan" class="w-full h-[200px] object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"></div>
+                     <div class="overflow-hidden"><img src="/images/1e1d4f6dd593842c5de0c76f506f44435769218f.png" alt="Teknik Komputer Jaringan" class="w-full h-[200px] object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"></div>
                      <div class="p-4 flex flex-col gap-5 flex-grow">
-                        <div class="card-icon-btn bg-primary-blue w-10 h-10 rounded-lg flex justify-center items-center transition-all duration-300 ease-in-out group-hover:rotate-360 group-hover:bg-accent-orange"><img src="../images/I8836_695_6048_65286.svg" alt="globe icon"></div>
+                        <div class="card-icon-btn bg-primary-blue w-10 h-10 rounded-lg flex justify-center items-center transition-all duration-300 ease-in-out group-hover:rotate-360 group-hover:bg-accent-orange"><img src="/images/I8836_695_6048_65286.svg" alt="globe icon"></div>
                         <h3 class="text-lg font-semibold leading-7">Teknik Komputer Jaringan</h3>
                         <p class="text-sm font-medium leading-5 text-text-gray flex-grow">TKJ (Teknik Komputer dan Jaringan) bukan cuma belajar kabel dan jaringan, tapi juga soal bagaimana komputer saling terhubung dan bekerja. Kamu diajak memahami dasar jaringan komputer, instalasi, hingga konfigurasi alat seperti Cisco dan Mikrotik.</p>
                         <div class="flex flex-wrap gap-4">
@@ -389,7 +288,7 @@
         </div>
       </section>
 
-<section id="projects" class="relative bg-[url(../images/8927_546.png)] overflow-hidden py-[60px] md:py-[120px] bg-white">
+<section id="projects" class="relative bg-[url(/images/8927_546.png)] overflow-hidden py-[60px] md:py-[120px] bg-white">
     <div class="container w-full max-w-[1220px] mx-auto px-5 box-border flex flex-col items-center gap-8">
       <h2 class="font-poppins font-bold text-4xl md:text-5xl text-center text-primary-blue animate-fade-in">Project Jurusan</h2>
       <div class="flex flex-col md:flex-row gap-2.5 bg-white p-1 rounded-lg shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] w-full md:w-auto animate-scale">
@@ -410,12 +309,12 @@
             </div>
             <div class="bg-white rounded-[20px] pt-[30px] text-center w-full overflow-hidden transition-transform duration-300 ease-in-out hover:scale-102 animate-scale">
                 <h3 class="text-primary-blue text-3xl md:text-4xl font-bold mb-[30px]">100+ Prestasi Nasional & Internasional</h3>
-                <img src="../images/9ef72e4a1bcfd2cb198b04ab6f4d47ac2de60afd.png" alt="Student achievements collage" class="w-full max-h-[500px] h-auto object-cover block">
+                <img src="/images/9ef72e4a1bcfd2cb198b04ab6f4d47ac2de60afd.png" alt="Student achievements collage" class="w-full max-h-[500px] h-auto object-cover block">
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 w-full">
                 <div class="flex flex-col gap-[60px]">
                     <div class="bg-white text-text-dark rounded-[20px] p-5 md:p-6 flex flex-col items-center text-center gap-6 flex-grow transition-all duration-300 ease-in-out hover:-translate-y-2.5 hover:shadow-[0px_15px_40px_rgba(0,0,0,0.25)] animate-on-scroll group">
-                        <img src="../images/61df151b60ecee2f7b9114254c0eecc151281930.png" alt="Web Design Award" class="w-[100px] h-[100px] object-contain transition-transform duration-500 ease-in-out group-hover:rotate-360 group-hover:scale-110">
+                        <img src="/images/61df151b60ecee2f7b9114254c0eecc151281930.png" alt="Web Design Award" class="w-[100px] h-[100px] object-contain transition-transform duration-500 ease-in-out group-hover:rotate-360 group-hover:scale-110">
                         <h4 class="text-2xl font-semibold leading-relaxed">Juara 1 Lomba Web Design Nasional</h4>
                         <div class="flex flex-col gap-2 text-text-gray text-xl leading-7">
                             <p>Athallah Muhammad Ghiyast Qinthara</p>
@@ -432,7 +331,7 @@
                 </div>
                 <div class="flex flex-col gap-[60px]">
                     <div class="bg-white text-text-dark rounded-[20px] p-5 md:p-6 flex flex-col items-center text-center gap-6 flex-grow transition-all duration-300 ease-in-out hover:-translate-y-2.5 hover:shadow-[0px_15px_40px_rgba(0,0,0,0.25)] animate-on-scroll group">
-                        <img src="../images/6a0d681ce256faccb09d7393576081d3b04b3ef4.png" alt="Speech Award" class="w-[100px] h-[100px] object-contain transition-transform duration-500 ease-in-out group-hover:rotate-360 group-hover:scale-110">
+                        <img src="/images/6a0d681ce256faccb09d7393576081d3b04b3ef4.png" alt="Speech Award" class="w-[100px] h-[100px] object-contain transition-transform duration-500 ease-in-out group-hover:rotate-360 group-hover:scale-110">
                         <h4 class="text-2xl font-semibold leading-relaxed">Juara 2 Lomba Speech Nasional</h4>
                         <div class="flex flex-col gap-2 text-text-gray text-xl leading-7">
                             <p>Maulana Moreno Ibrahim</p>
@@ -447,7 +346,7 @@
                 </div>
                 <div class="flex flex-col gap-[60px]">
                     <div class="bg-white text-text-dark rounded-[20px] p-5 md:p-6 flex flex-col items-center text-center gap-6 flex-grow transition-all duration-300 ease-in-out hover:-translate-y-2.5 hover:shadow-[0px_15px_40px_rgba(0,0,0,0.25)] animate-on-scroll group">
-                        <img src="../images/d6d929fed5f498593eef2b6262893e284df4663c.png" alt="Informatics Award" class="w-[100px] h-[100px] object-contain transition-transform duration-500 ease-in-out group-hover:rotate-360 group-hover:scale-110">
+                        <img src="/images/d6d929fed5f498593eef2b6262893e284df4663c.png" alt="Informatics Award" class="w-[100px] h-[100px] object-contain transition-transform duration-500 ease-in-out group-hover:rotate-360 group-hover:scale-110">
                         <h4 class="text-2xl font-semibold leading-relaxed">Juara 2 Lomba Informatika Nasional</h4>
                         <div class="flex flex-col gap-2 text-text-gray text-xl leading-7">
                             <p>Moch. Guntur Budi Pratama</p>
@@ -464,54 +363,54 @@
         </div>
       </section>
 
-      <section id="alumni-testimonials" class="relative bg-[url(../images/8927_546.png)] overflow-hidden py-[60px] md:py-[120px] bg-white">
+      <section id="alumni-testimonials" class="relative bg-[url(/images/8927_546.png)] overflow-hidden py-[60px] md:py-[120px] bg-white">
         <div class="container w-full max-w-[1220px] mx-auto px-5 box-border flex flex-col gap-[120px]">
             <div class="flex flex-col items-center gap-[60px]">
                 <div class="tag inline-flex justify-center items-center py-2 px-4 rounded-full bg-primary-blue text-white border border-white transition-transform duration-300 ease-in-out hover:scale-105 shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] animate-scale">
-                    <img src="../images/8836_1027.svg" alt="graduation cap icon" class="mr-2">
+                    <img src="/images/8836_1027.svg" alt="graduation cap icon" class="mr-2">
                     <span class="font-semibold text-2xl md:text-3xl leading-snug">Kampus Alumni IDN</span>
                 </div>
                 <div class="grid grid-cols-[repeat(auto-fill,minmax(114px,1fr))] gap-2 w-full">
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/3d20487d542b99325d08571e046a52383190a8e2.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 group-hover:rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/e87e55b13a1300e4eb9e3e6b8cf64c751dcac2ce.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/cace4905101542bca5cbd5a012e6a797841e16de.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/16a1b0ad081cfae4ee78158ec0a590e8a9a4361b.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/80a297b869b70b4fb51bb6097a2abcf5e2f906c8.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/7f3c32d30e25ce808d17df3488c1cd0313cf1860.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/db18cfa67ecd53d5dcace137d01ee3cc81e32158.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/ad26aa63db7907cdbf06ad6bcd61e501c3d09b6c.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/99dfdcbdeb708c42cf7a2f08c26eae4315d78540.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/777f5756a84e4883223be20c9c5a15f6c9ea9b91.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/65d371164e99bd7febda9909c31e36b132732495.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/7ba2d11d0495d1d245fb6772f1ab54df85c2d0b7.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/7959a2e776edf2a95aea428a953cc7446a6593a6.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/9e1bda6358861c3771925dea2b850cd4ecdfd95f.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/31b2dffed452314f903acdc618afd099b96f57c5.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/8235811dc26c1aa12b464de631e72ad483b09f2b.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/4c1334d7cf0b59de27f16a166323a3c7e3cef3c1.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/42a1b09740c9981fac5e6ebb988bf24d25035f13.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/d2d26d61ca3ab8d5645fb9436fc840274c233336.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/8dbb340f46d3484a8ab3593ed2572ce0359f8c02.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/73f4a33b0133cd1f9b8555ab7d3b7331bd4ca700.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/eeb08cdf78263891de95db70d0a4e0661a957739.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/a94f54176e36c7dd239774f363555d353ca7527d.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/3573cc9e15dcdfa3bd12a58d69f9038ad00ab37b.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/f624ec200bde5ce2523b4b3c5224af56e9710e58.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/db7f584b6ec12245db715702f33198c240bbd919.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
-                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="../images/597f73d27e9a6f2d5af2f8dfc0d720016cfc0a29.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/3d20487d542b99325d08571e046a52383190a8e2.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 group-hover:rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/e87e55b13a1300e4eb9e3e6b8cf64c751dcac2ce.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/cace4905101542bca5cbd5a012e6a797841e16de.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/16a1b0ad081cfae4ee78158ec0a590e8a9a4361b.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/80a297b869b70b4fb51bb6097a2abcf5e2f906c8.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/7f3c32d30e25ce808d17df3488c1cd0313cf1860.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/db18cfa67ecd53d5dcace137d01ee3cc81e32158.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/ad26aa63db7907cdbf06ad6bcd61e501c3d09b6c.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/99dfdcbdeb708c42cf7a2f08c26eae4315d78540.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/777f5756a84e4883223be20c9c5a15f6c9ea9b91.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/65d371164e99bd7febda9909c31e36b132732495.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/7ba2d11d0495d1d245fb6772f1ab54df85c2d0b7.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/7959a2e776edf2a95aea428a953cc7446a6593a6.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/9e1bda6358861c3771925dea2b850cd4ecdfd95f.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/31b2dffed452314f903acdc618afd099b96f57c5.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/8235811dc26c1aa12b464de631e72ad483b09f2b.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/4c1334d7cf0b59de27f16a166323a3c7e3cef3c1.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/42a1b09740c9981fac5e6ebb988bf24d25035f13.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/d2d26d61ca3ab8d5645fb9436fc840274c233336.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/8dbb340f46d3484a8ab3593ed2572ce0359f8c02.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/73f4a33b0133cd1f9b8555ab7d3b7331bd4ca700.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/eeb08cdf78263891de95db70d0a4e0661a957739.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/a94f54176e36c7dd239774f363555d353ca7527d.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/3573cc9e15dcdfa3bd12a58d69f9038ad00ab37b.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/f624ec200bde5ce2523b4b3c5224af56e9710e58.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/db7f584b6ec12245db715702f33198c240bbd919.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
+                    <div class="logo-box bg-[#f1f7ff] border-[1.25px] border-primary-blue rounded-md p-2.5 flex justify-center items-center h-[114px] transition-all duration-300 ease-in-out hover:scale-110 hover:bg-primary-blue hover:shadow-[0_4px_15px_rgba(28,76,208,0.3)] animate-on-scroll group"><img src="/images/597f73d27e9a6f2d5af2f8dfc0d720016cfc0a29.png" alt="Alumni Logo" class="max-w-[94px] max-h-[94px] object-contain transition-filter duration-300 ease-in-out group-hover:bg-[#ffffffdd] p-2 rounded-lg"></div>
                 </div>
             </div>
             <div class="flex flex-col items-center gap-[60px]">
                 <div class="tag inline-flex justify-center items-center py-2 px-4 rounded-full bg-primary-blue text-white border border-white transition-transform duration-300 ease-in-out hover:scale-105 shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] animate-scale">
-                    <img src="../images/8879_749.svg" alt="like icon" class="mr-2">
+                    <img src="/images/8879_749.svg" alt="like icon" class="mr-2">
                     <span class="font-semibold text-2xl md:text-3xl leading-snug">Apa kata Walisantri?</span>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
                     <div class="bg-white rounded-[20px] shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] p-5 flex flex-col gap-3 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-[0px_15px_40px_rgba(0,0,0,0.25)] animate-slide-left group">
                         <div class="text-[#f59e0b] text-2xl">★★★★★</div>
-                        <p class="text-sm leading-5 text-text-dark flex-grow">"Sebagai orang tua, saya awalnya khawatir melepas anak tinggal di asrama. Namun setelah beberapa bulan di IDN Boarding School, saya melihat perubahan besar pada dirinya..."</p>
+                        <p class="text-sm leading-5 text-text-dark flex-grow">"Sebagai orang tua, saya awalnya khawatir melepas anak tinggal di asrama. Namun setelah beberapa bulan di IDN Boarding School, saya melihat perubahan besar pada dirinya."</p>
                         <div class="flex items-center gap-2.5 mt-4">
-                            <img src="../images/8879_487.svg" alt="author avatar" class="w-11 h-11 transition-transform duration-300 ease-in-out group-hover:scale-125">
+                            <img src="/images/8879_487.svg" alt="author avatar" class="w-11 h-11 transition-transform duration-300 ease-in-out group-hover:scale-125">
                             <div class="flex flex-col">
                                 <strong class="text-sm font-medium text-text-dark">Ummu Athallah</strong>
                                 <span class="text-xs text-text-gray">Walisantri SMK IDN</span>
@@ -520,9 +419,9 @@
                     </div>
                     <div class="bg-white rounded-[20px] shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] p-5 flex flex-col gap-3 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-[0px_15px_40px_rgba(0,0,0,0.25)] animate-slide-right group">
                         <div class="text-[#f59e0b] text-2xl">★★★★★</div>
-                        <p class="text-sm leading-5 text-text-dark flex-grow">"Anak saya dulu cukup pendiam dan kurang percaya diri. Tapi setelah belajar di IDN, ia jadi lebih terbuka dan berani tampil di depan umum..."</p>
+                        <p class="text-sm leading-5 text-text-dark flex-grow">"Anak saya dulu cukup pendiam dan kurang percaya diri. Tapi setelah belajar di IDN, ia jadi lebih terbuka dan berani tampil di depan umum."</p>
                         <div class="flex items-center gap-2.5 mt-4">
-                            <img src="../images/8879_513.svg" alt="author avatar" class="w-11 h-11 transition-transform duration-300 ease-in-out group-hover:scale-125">
+                            <img src="/images/8879_513.svg" alt="author avatar" class="w-11 h-11 transition-transform duration-300 ease-in-out group-hover:scale-125">
                             <div class="flex flex-col">
                                 <strong class="text-sm font-medium text-text-dark">Abu Fauzan</strong>
                                 <span class="text-xs text-text-gray">Walisantri SMK IDN</span>
@@ -531,9 +430,9 @@
                     </div>
                     <div class="bg-white rounded-[20px] shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] p-5 flex flex-col gap-3 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-[0px_15px_40px_rgba(0,0,0,0.25)] animate-slide-left group">
                         <div class="text-[#f59e0b] text-2xl">★★★★★</div>
-                        <p class="text-sm leading-5 text-text-dark flex-grow">"Yang paling saya kagumi dari IDN adalah bagaimana mereka menanamkan nilai-nilai Islam dalam setiap aktivitas anak-anak..."</p>
+                        <p class="text-sm leading-5 text-text-dark flex-grow">"Yang paling saya kagumi dari IDN adalah bagaimana mereka menanamkan nilai-nilai Islam dalam setiap aktivitas anak-anak."</p>
                         <div class="flex items-center gap-2.5 mt-4">
-                            <img src="../images/8879_533.svg" alt="author avatar" class="w-11 h-11 transition-transform duration-300 ease-in-out group-hover:scale-125">
+                            <img src="/images/8879_533.svg" alt="author avatar" class="w-11 h-11 transition-transform duration-300 ease-in-out group-hover:scale-125">
                             <div class="flex flex-col">
                                 <strong class="text-sm font-medium text-text-dark">Abu Guntur</strong>
                                 <span class="text-xs text-text-gray">Walisantri SMK IDN</span>
@@ -542,9 +441,9 @@
                     </div>
                     <div class="bg-white rounded-[20px] shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] p-5 flex flex-col gap-3 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-[0px_15px_40px_rgba(0,0,0,0.25)] animate-slide-right group">
                         <div class="text-[#f59e0b] text-2xl">★★★★★</div>
-                        <p class="text-sm leading-5 text-text-dark flex-grow">"Saya bangga anak saya bisa menjadi bagian dari IDN Boarding School. Kurikulum yang berbasis praktik membuatnya tidak hanya pintar teori..."</p>
+                        <p class="text-sm leading-5 text-text-dark flex-grow">"Saya bangga anak saya bisa menjadi bagian dari IDN Boarding School. Kurikulum yang berbasis praktik membuatnya tidak hanya pintar teori."</p>
                         <div class="flex items-center gap-2.5 mt-4">
-                            <img src="../images/8879_717.svg" alt="author avatar" class="w-11 h-11 transition-transform duration-300 ease-in-out group-hover:scale-125">
+                            <img src="/images/8879_717.svg" alt="author avatar" class="w-11 h-11 transition-transform duration-300 ease-in-out group-hover:scale-125">
                             <div class="flex flex-col">
                                 <strong class="text-sm font-medium text-text-dark">Ummu Raja</strong>
                                 <span class="text-xs text-text-gray">Walisantri SMK IDN</span>
@@ -556,10 +455,10 @@
         </div>
       </section>
 
-      <section id="tuition" class="relative bg-[url(../images/8927_546.png)] overflow-hidden py-[60px] md:py-[120px] bg-white">
+      <section id="tuition" class="relative bg-[url(/images/8927_546.png)] overflow-hidden py-[60px] md:py-[120px] bg-white">
         <div class="container w-full max-w-[1220px] mx-auto px-5 box-border flex flex-col items-center gap-[60px]">
             <div class="tag inline-flex justify-center items-center py-2 px-4 rounded-full bg-primary-blue text-white border border-white transition-transform duration-300 ease-in-out hover:scale-105 shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] animate-scale">
-                <img src="../images/8882_809.svg" alt="wallet icon" class="mr-2">
+                <img src="/images/8882_809.svg" alt="wallet icon" class="mr-2">
                 <span class="font-semibold text-2xl md:text-3xl leading-snug">Biaya Pendidikan</span>
             </div>
             <div class="flex flex-col gap-5 w-full">
@@ -614,7 +513,7 @@
 <!-- Cabang IDN -->
       <section id="branches" class="bg-white flex flex-wrap justify-center py-16 sm:py-24">
   <div class="tag inline-flex justify-center items-center py-2 px-4 mb-[80px] rounded-full bg-primary-blue text-white border border-white transition-transform duration-300 ease-in-out hover:scale-105 shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] animate-scale">
-    <img src="../images/8890_1294.svg" alt="location pin icon" class="mr-2">
+    <img src="/images/8890_1294.svg" alt="location pin icon" class="mr-2">
     <span class="font-semibold text-2xl md:text-3xl leading-snug">Cabang IDN</span>
   </div>
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -622,7 +521,7 @@
       
       <!-- Added animate-on-scroll class and stagger delay for each branch card -->
       <div class="branch-card relative flex h-[500px] flex-col justify-end overflow-hidden rounded-2xl animate-on-scroll" style="transition-delay: 0ms;">
-        <img src="../images/idn_jonggol.png" alt="IDN Jonggol Campus" class="absolute inset-0 h-full w-full object-cover">
+        <img src="/images/idn_jonggol.png" alt="IDN Jonggol Campus" class="absolute inset-0 h-full w-full object-cover">
         <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
         <div class="relative z-10 flex flex-col justify-end p-4">
           <div class="flex flex-col gap-8">
@@ -641,7 +540,7 @@
       </div>
 
       <div class="branch-card relative flex h-[500px] flex-col justify-end overflow-hidden rounded-2xl animate-on-scroll" style="transition-delay: 150ms;">
-        <img src="../images/idn_akhwat.png" alt="IDN Akhwat Campus" class="absolute inset-0 h-full w-full object-cover">
+        <img src="/images/idn_akhwat.png" alt="IDN Akhwat Campus" class="absolute inset-0 h-full w-full object-cover">
         <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
         <div class="relative z-10 flex flex-col justify-end p-4">
           <div class="flex flex-col gap-8">
@@ -660,7 +559,7 @@
       </div>
 
       <div class="branch-card relative flex h-[500px] flex-col justify-end overflow-hidden rounded-2xl animate-on-scroll" style="transition-delay: 300ms;">
-        <img src="../images/idn_pamijahan.png" alt="IDN Pamijahan Campus" class="absolute inset-0 h-full w-full object-cover">
+        <img src="/images/idn_pamijahan.png" alt="IDN Pamijahan Campus" class="absolute inset-0 h-full w-full object-cover">
         <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
         <div class="relative z-10 flex flex-col justify-end p-4">
           <div class="flex flex-col gap-8">
@@ -678,7 +577,7 @@
       </div>
 
       <div class="branch-card relative flex h-[500px] flex-col justify-end overflow-hidden rounded-2xl animate-on-scroll" style="transition-delay: 450ms;">
-        <img src="../images/idn_solo.png" alt="IDN Solo Campus" class="absolute inset-0 h-full w-full object-cover">
+        <img src="/images/idn_solo.png" alt="IDN Solo Campus" class="absolute inset-0 h-full w-full object-cover">
         <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
         <div class="relative z-10 flex flex-col justify-end p-4">
           <div class="flex flex-col gap-8">
@@ -696,7 +595,7 @@
       </div>
 
       <div class="branch-card relative flex h-[500px] flex-col justify-end overflow-hidden rounded-2xl animate-on-scroll" style="transition-delay: 600ms;">
-        <img src="../images/idn_sentul.png" alt="IDN Sentul Campus" class="absolute inset-0 h-full w-full object-cover">
+        <img src="/images/idn_sentul.png" alt="IDN Sentul Campus" class="absolute inset-0 h-full w-full object-cover">
         <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
         <div class="relative z-10 flex flex-col justify-end p-4">
           <div class="flex flex-col gap-8">
@@ -714,7 +613,7 @@
       </div>
 
       <div class="branch-card relative flex h-[500px] flex-col justify-end overflow-hidden rounded-2xl animate-on-scroll" style="transition-delay: 750ms;">
-        <img src="../images/idn_malang.png" alt="IDN Malang Campus" class="absolute inset-0 h-full w-full object-cover">
+        <img src="/images/idn_malang.png" alt="IDN Malang Campus" class="absolute inset-0 h-full w-full object-cover">
         <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
         <div class="relative z-10 flex flex-col justify-end p-4">
           <div class="flex flex-col gap-8">
@@ -738,12 +637,12 @@
       <!-- Pop up Cabang IDN -->
       <section class="h-full w-full fixed top-0 left-0 flex items-center justify-center bg-black/50 z-50 hidden" id="branch-popup-backdrop">
         <div id="Popup-jonggol" class="hidden max-w-[500px] max-w-[500px] flex-col rounded-2xl border-[3px] bg-white p-5">
-        <img src="../images/idn_jonggol.png" alt="Campus of IDN Boarding School Jonggol" class="h-44 w-full rounded-xl object-cover">
+        <img src="/images/idn_jonggol.png" alt="Campus of IDN Boarding School Jonggol" class="h-44 w-full rounded-xl object-cover">
         <div class="flex flex-1 flex-col justify-between pt-6">
           <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
               <div class="flex items-center gap-1.5">
-                <img src="../images/6_134.svg" alt="Location pin" class="h-4 w-4">
+                <img src="/images/6_134.svg" alt="Location pin" class="h-4 w-4">
                 <p class="text-xs font-medium text-gray-500">Jl. Raya Jonggol-Dayeuh</p>
               </div>
               <h3 class="text-xl font-semibold text-black">IDN Boarding School Jonggol</h3>
@@ -757,21 +656,21 @@
           </div>
           <div class="mt-6 flex justify-between divide-x divide-gray-200 border-t border-gray-200 pt-6">
             <div class="flex flex-1 items-center justify-center gap-3 px-1">
-              <img src="../images/6_114.svg" alt="Students icon" class="h-8 w-8">
+              <img src="/images/6_114.svg" alt="Students icon" class="h-8 w-8">
               <div>
                 <p class="text-xl font-semibold text-gray-500">300+</p>
                 <p class="text-base font-medium text-gray-500">Santri</p>
               </div>
             </div>
             <div class="flex flex-1 items-center justify-center gap-3 px-1">
-              <img src="../images/6_119.svg" alt="Teacher icon" class="h-8 w-8">
+              <img src="/images/6_119.svg" alt="Teacher icon" class="h-8 w-8">
               <div>
                 <p class="text-xl font-semibold text-gray-500">40+</p>
                 <p class="text-base font-medium text-gray-500">Guru</p>
               </div>
             </div>
             <div class="flex flex-1 items-center justify-center gap-3 px-1">
-              <img src="../images/6_124.svg" alt="Admin icon" class="h-8 w-8">
+              <img src="/images/6_124.svg" alt="Admin icon" class="h-8 w-8">
               <div>
                 <p class="text-xl font-semibold text-gray-500">12+</p>
                 <p class="text-base font-medium text-gray-500">Admin</p>
@@ -783,12 +682,12 @@
 
       <!-- Card 2: IDN Akhwat -->
       <div id="Popup-akhwat" class="hidden max-w-[500px] flex-col rounded-2xl border-[3px] bg-white p-5">
-        <img src="../images/idn_akhwat.png" alt="Campus of IDN Boarding School Akhwat" class="h-44 w-full rounded-xl object-cover">
+        <img src="/images/idn_akhwat.png" alt="Campus of IDN Boarding School Akhwat" class="h-44 w-full rounded-xl object-cover">
         <div class="flex flex-1 flex-col justify-between pt-6">
           <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
               <div class="flex items-center gap-1.5">
-                <img src="../images/6_134.svg" alt="Location pin" class="h-4 w-4">
+                <img src="/images/6_134.svg" alt="Location pin" class="h-4 w-4">
                 <p class="text-xs font-medium text-gray-500">Jl. Raya Jonggol-Dayeuh</p>
               </div>
               <h3 class="text-xl font-semibold text-black">IDN Boarding School Akhwat</h3>
@@ -802,21 +701,21 @@
           </div>
           <div class="mt-6 flex justify-between divide-x divide-gray-200 border-t border-gray-200 pt-6">
             <div class="flex flex-1 items-center justify-center gap-3 px-1">
-              <img src="../images/6_114.svg" alt="Students icon" class="h-8 w-8">
+              <img src="/images/6_114.svg" alt="Students icon" class="h-8 w-8">
               <div>
                 <p class="text-xl font-semibold text-gray-500">250+</p>
                 <p class="text-base font-medium text-gray-500">Santriwati</p>
               </div>
             </div>
             <div class="flex flex-1 items-center justify-center gap-3 px-1">
-              <img src="../images/6_119.svg" alt="Teacher icon" class="h-8 w-8">
+              <img src="/images/6_119.svg" alt="Teacher icon" class="h-8 w-8">
               <div>
                 <p class="text-xl font-semibold text-gray-500">20+</p>
                 <p class="text-base font-medium text-gray-500">Guru</p>
               </div>
             </div>
             <div class="flex flex-1 items-center justify-center gap-3 px-1">
-              <img src="../images/6_124.svg" alt="Admin icon" class="h-8 w-8">
+              <img src="/images/6_124.svg" alt="Admin icon" class="h-8 w-8">
               <div>
                 <p class="text-xl font-semibold text-gray-500">5+</p>
                 <p class="text-base font-medium text-gray-500">Admin</p>
@@ -828,12 +727,12 @@
 
       <!-- Card 3: IDN Pamijahan -->
       <div id="Popup-pamijahan" class="hidden max-w-[500px] flex-col rounded-2xl border-[3px] bg-white p-5">
-        <img src="../images/idn_pamijahan.png" alt="Campus of IDN Boarding School Pamijahan" class="h-44 w-full rounded-xl object-cover">
+        <img src="/images/idn_pamijahan.png" alt="Campus of IDN Boarding School Pamijahan" class="h-44 w-full rounded-xl object-cover">
         <div class="flex flex-1 flex-col justify-between pt-6">
           <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
               <div class="flex items-center gap-1.5">
-                <img src="../images/6_134.svg" alt="Location pin" class="h-4 w-4">
+                <img src="/images/6_134.svg" alt="Location pin" class="h-4 w-4">
                 <p class="text-xs font-medium text-gray-500">Jl. KH. Abdul Hamid, Gunung Sari</p>
               </div>
               <h3 class="text-xl font-semibold text-black">IDN Boarding School Pamijahan</h3>
@@ -846,21 +745,21 @@
           </div>
           <div class="mt-6 flex justify-between divide-x divide-gray-200 border-t border-gray-200 pt-6">
             <div class="flex flex-1 items-center justify-center gap-3 px-1">
-              <img src="../images/6_146.svg" alt="Students icon" class="h-8 w-8">
+              <img src="/images/6_146.svg" alt="Students icon" class="h-8 w-8">
               <div>
                 <p class="text-xl font-semibold text-gray-500">120+</p>
                 <p class="text-base font-medium text-gray-500">Santri</p>
               </div>
             </div>
             <div class="flex flex-1 items-center justify-center gap-3 px-1">
-              <img src="../images/6_151.svg" alt="Teacher icon" class="h-8 w-8">
+              <img src="/images/6_151.svg" alt="Teacher icon" class="h-8 w-8">
               <div>
                 <p class="text-xl font-semibold text-gray-500">20+</p>
                 <p class="text-base font-medium text-gray-500">Guru</p>
               </div>
             </div>
             <div class="flex flex-1 items-center justify-center gap-3 px-1">
-              <img src="../images/6_156.svg" alt="Admin icon" class="h-8 w-8">
+              <img src="/images/6_156.svg" alt="Admin icon" class="h-8 w-8">
               <div>
                 <p class="text-xl font-semibold text-gray-500">5+</p>
                 <p class="text-base font-medium text-gray-500">Admin</p>
@@ -872,12 +771,12 @@
 
       <!-- Card 4: IDN Solo -->
       <div id="Popup-solo" class="hidden max-w-[500px] flex-col rounded-2xl border-[3px] bg-white p-5">
-        <img src="../images/idn_solo.png" alt="Campus of IDN Boarding School Solo" class="h-44 w-full rounded-xl object-cover">
+        <img src="/images/idn_solo.png" alt="Campus of IDN Boarding School Solo" class="h-44 w-full rounded-xl object-cover">
         <div class="flex flex-1 flex-col justify-between pt-6">
           <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
               <div class="flex items-center gap-1.5">
-                <img src="../images/6_134.svg" alt="Location pin" class="h-4 w-4">
+                <img src="/images/6_134.svg" alt="Location pin" class="h-4 w-4">
                 <p class="text-xs font-medium text-gray-500">Dusun Gondanglegi, Karanganyar</p>
               </div>
               <h3 class="text-xl font-semibold text-black">IDN Boarding School Solo</h3>
@@ -890,21 +789,21 @@
           </div>
           <div class="mt-6 flex justify-between divide-x divide-gray-200 border-t border-gray-200 pt-6">
             <div class="flex flex-1 items-center justify-center gap-3 px-1">
-              <img src="../images/6_178.svg" alt="Students icon" class="h-8 w-8">
+              <img src="/images/6_178.svg" alt="Students icon" class="h-8 w-8">
               <div>
                 <p class="text-xl font-semibold text-gray-500">150+</p>
                 <p class="text-base font-medium text-gray-500">Santri</p>
               </div>
             </div>
             <div class="flex flex-1 items-center justify-center gap-3 px-1">
-              <img src="../images/6_183.svg" alt="Teacher icon" class="h-8 w-8">
+              <img src="/images/6_183.svg" alt="Teacher icon" class="h-8 w-8">
               <div>
                 <p class="text-xl font-semibold text-gray-500">15+</p>
                 <p class="text-base font-medium text-gray-500">Guru</p>
               </div>
             </div>
             <div class="flex flex-1 items-center justify-center gap-3 px-1">
-              <img src="../images/6_188.svg" alt="Admin icon" class="h-8 w-8">
+              <img src="/images/6_188.svg" alt="Admin icon" class="h-8 w-8">
               <div>
                 <p class="text-xl font-semibold text-gray-500">7+</p>
                 <p class="text-base font-medium text-gray-500">Admin</p>
@@ -916,12 +815,12 @@
 
       <!-- Card 5: IDN Sentul -->
       <div id="Popup-sentul" class="hidden max-w-[500px] flex-col rounded-2xl border-[3px] bg-white p-5">
-        <img src="../images/idn_sentul.png" alt="Campus of IDN Boarding School Sentul" class="h-44 w-full rounded-xl object-cover">
+        <img src="/images/idn_sentul.png" alt="Campus of IDN Boarding School Sentul" class="h-44 w-full rounded-xl object-cover">
         <div class="flex flex-1 flex-col justify-between pt-6">
           <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
               <div class="flex items-center gap-1.5">
-                <img src="../images/6_134.svg" alt="Location pin" class="h-4 w-4">
+                <img src="/images/6_134.svg" alt="Location pin" class="h-4 w-4">
                 <p class="text-xs font-medium text-gray-500">Central Karang, Babakan Madang</p>
               </div>
               <h3 class="text-xl font-semibold text-black">IDN Boarding School Sentul</h3>
@@ -934,21 +833,21 @@
           </div>
           <div class="mt-6 flex justify-between divide-x divide-gray-200 border-t border-gray-200 pt-6">
             <div class="flex flex-1 items-center justify-center gap-3 px-1">
-              <img src="../images/6_210.svg" alt="Students icon" class="h-8 w-8">
+              <img src="/images/6_210.svg" alt="Students icon" class="h-8 w-8">
               <div>
                 <p class="text-xl font-semibold text-gray-500">100+</p>
                 <p class="text-base font-medium text-gray-500">Santri</p>
               </div>
             </div>
             <div class="flex flex-1 items-center justify-center gap-3 px-1">
-              <img src="../images/6_215.svg" alt="Teacher icon" class="h-8 w-8">
+              <img src="/images/6_215.svg" alt="Teacher icon" class="h-8 w-8">
               <div>
                 <p class="text-xl font-semibold text-gray-500">10+</p>
                 <p class="text-base font-medium text-gray-500">Guru</p>
               </div>
             </div>
             <div class="flex flex-1 items-center justify-center gap-3 px-1">
-              <img src="../images/6_220.svg" alt="Admin icon" class="h-8 w-8">
+              <img src="/images/6_220.svg" alt="Admin icon" class="h-8 w-8">
               <div>
                 <p class="text-xl font-semibold text-gray-500">10+</p>
                 <p class="text-base font-medium text-gray-500">Admin</p>
@@ -960,12 +859,12 @@
 
       <!-- Card 6: IDN Malang -->
       <div id="Popup-malang" class="hidden max-w-[500px] flex-col rounded-2xl border-[3px] bg-white p-5">
-        <img src="../images/idn_solo.png" alt="Campus of IDN Boarding School Malang" class="h-44 w-full rounded-xl object-cover">
+        <img src="/images/idn_solo.png" alt="Campus of IDN Boarding School Malang" class="h-44 w-full rounded-xl object-cover">
         <div class="flex flex-1 flex-col justify-between pt-6">
           <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
               <div class="flex items-center gap-1.5">
-                <img src="../images/6_134.svg" alt="Location pin" class="h-4 w-4">
+                <img src="/images/6_134.svg" alt="Location pin" class="h-4 w-4">
                 <p class="text-xs font-medium text-gray-500">Dusun Ngadas, Poncokusumo</p>
               </div>
               <h3 class="text-xl font-semibold text-black">IDN Boarding School Malang</h3>
@@ -978,21 +877,21 @@
           </div>
           <div class="mt-6 flex justify-between divide-x divide-gray-200 border-t border-gray-200 pt-6">
             <div class="flex flex-1 items-center justify-center gap-3 px-1">
-              <img src="../images/6_242.svg" alt="Students icon" class="h-8 w-8">
+              <img src="/images/6_242.svg" alt="Students icon" class="h-8 w-8">
               <div>
                 <p class="text-xl font-semibold text-gray-500">50+</p>
                 <p class="text-base font-medium text-gray-500">Santri</p>
               </div>
             </div>
             <div class="flex flex-1 items-center justify-center gap-3 px-1">
-              <img src="../images/6_247.svg" alt="Teacher icon" class="h-8 w-8">
+              <img src="/images/6_247.svg" alt="Teacher icon" class="h-8 w-8">
               <div>
                 <p class="text-xl font-semibold text-gray-500">10+</p>
                 <p class="text-base font-medium text-gray-500">Guru</p>
               </div>
             </div>
             <div class="flex flex-1 items-center justify-center gap-3 px-1">
-              <img src="../images/6_252.svg" alt="Admin icon" class="h-8 w-8">
+              <img src="/images/6_252.svg" alt="Admin icon" class="h-8 w-8">
               <div>
                 <p class="text-xl font-semibold text-gray-500">5+</p>
                 <p class="text-base font-medium text-gray-500">Admin</p>
@@ -1017,7 +916,7 @@
                     <div class="timeline-content bottom">
                         <h4 class="text-xl font-bold leading-7">Pendaftaran Dibuka</h4>
                         <div class="flex items-center gap-2 mt-2 text-text-gray font-semibold">
-                            <img src="../images/8901_1356.svg" alt="calendar icon">
+                            <img src="/images/8901_1356.svg" alt="calendar icon">
                             <span>23 Agustus 2025</span>
                         </div>
                     </div>
@@ -1029,7 +928,7 @@
             </div>
             <div class="flex flex-col items-center gap-[30px] animate-scale">
                 <h2 class="font-poppins font-bold text-4xl md:text-5xl text-center">Ayo Daftarkan Sekarang Juga!</h2>
-                <a href="#" class="btn bg-accent-orange text-white border-none shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] inline-flex justify-center items-center gap-2.5 py-3 md:py-3.5 px-6 md:px-7 rounded-xl font-semibold text-base md:text-lg cursor-pointer transition-all duration-300 ease-in-out relative overflow-hidden hover:-translate-y-1 hover:shadow-lg active:-translate-y-px">Daftar Santri Baru <img src="../images/I8901_1472_6048_64342.svg" alt="arrow right"></a>
+                <a href="#" class="btn bg-accent-orange text-white border-none shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] inline-flex justify-center items-center gap-2.5 py-3 md:py-3.5 px-6 md:px-7 rounded-xl font-semibold text-base md:text-lg cursor-pointer transition-all duration-300 ease-in-out relative overflow-hidden hover:-translate-y-1 hover:shadow-lg active:-translate-y-px">Daftar Santri Baru <img src="/images/I8901_1472_6048_64342.svg" alt="arrow right"></a>
             </div>
         </div>
       </section>
@@ -1053,59 +952,12 @@
     </main>
 
 <div id="AI-btn" class="fixed bottom-5 left-5 z-[99] cursor-pointer rounded-full bg-[#da4109] py-5 px-6 outline-none transition-all duration-500 animate-fadeInUp hover:bottom-7 hover:bg-[#2b8d74] hover:shadow-[0_0_20px_3px_#7dfadb]">
-    <a href="../AI/ai_idn.html" class="text-2xl font-semibold text-white no-underline">AI</a>
+    <a href="/AI/ai_idn.html" class="text-2xl font-semibold text-white no-underline">AI</a>
   </div>
 
-    <footer id="footer" class="font-figtree">
-      <div class="bg-dark-blue text-white py-[50px]">
-          <div class="container w-full max-w-[1220px] mx-auto px-5 box-border flex flex-col lg:flex-row justify-between gap-[60px]">
-              <div class="max-w-[360px] flex flex-col gap-[30px] items-start animate-slide-left">
-                  <img src="../images/logo_idn.png" alt="IDN Boarding School Logo" class="h-[81px] transition-transform duration-300 ease-in-out hover:scale-110">
-                  <p class="text-base leading-6 font-medium">lembaga pendidikan berbasis IT yang memandang pendidikan sebagai investasi terbaik dalam kehidupan manusia, karena melalui pendidikan, kita dapat membangun karakter dan peradaban yang lebih maju.</p>
-                  <div class="flex gap-6">
-                      <a href="https://www.instagram.com/idnboardingschool/" target="_blank" class="transition-transform duration-300 ease-in-out hover:-translate-y-1"><img src="../images/8836_1040.svg" alt="Instagram" class="w-[30px] h-[30px]"></a>
-                      <a href="https://api.whatsapp.com/send?phone=6281216653328" target="_blank" class="transition-transform duration-300 ease-in-out hover:-translate-y-1"><img src="../images/8836_1041.svg" alt="WhatsApp" class="w-[30px] h-[30px]"></a>
-                      <a href="https://www.facebook.com/idnboardingschool/?locale=id_ID" target="_blank" class="transition-transform duration-300 ease-in-out hover:-translate-y-1"><img src="../images/8836_1042.svg" alt="Facebook" class="w-[30px] h-[30px]"></a>
-                      <a href="https://www.youtube.com/@IDNTV2022" class="transition-transform duration-300 ease-in-out hover:-translate-y-1"><img src="../images/8836_1043.svg" alt="YouTube" class="w-[30px] h-[30px]"></a>
-                  </div>
-              </div>
-              <div class="footer-links flex flex-col md:flex-row gap-[30px] md:gap-[60px] animate-slide-right">
-                  <nav class="flex flex-col gap-3">
-                      <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">PPDB</a>
-                      <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Akademik SMK</a>
-                      <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Akademik SMP</a>
-                      <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Ekstrakurikuler</a>
-                      <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Program Internasional</a>
-                      <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Backpacker</a>
-                      <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">IDN Mengajar</a>
-                      <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Live In</a>
-                  </nav>
-                  <nav class="flex flex-col gap-3">
-                      <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Susur Goa</a>
-                      <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Business Survival</a>
-                      <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Edurace</a>
-                      <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">IDN Bersyukur</a>
-                      <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">LDKS</a>
-                      <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">IT Camp</a>
-                      <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Artikel</a>
-                      <a href="https://api.whatsapp.com/send?phone=6282116653328" target="_blank" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Kontak</a>
-                  </nav>
-              </div>
-          </div>
-      </div>
-      <div class="bg-white py-2.5">
-          <div class="container w-full max-w-[1220px] mx-auto px-5 box-border flex flex-col md:flex-row justify-between items-center gap-5">
-              <p class="font-poppins text-sm text-[#535353] font-light">© Copyright 2025 - <strong class="font-semibold text-blue-500">IDN Boarding School</strong></p>
-              <div class="flex items-center gap-4">
-                  <img src="../images/016698a76ad9a32430b855f5b14e67f975aa7f1d.png" alt="Partner Logo 1" class="h-[41px] object-contain">
-                  <img src="../images/ff4dd3f58988e9c84b9bb141610e22b15ccd7517.png" alt="Partner Logo 2" class="h-[41px] object-contain">
-                  <img src="../images/7aa61f391f8a3e5ee44b96311384f438a35fda38.png" alt="Partner Logo 3" class="h-[41px] object-contain">
-                  <img src="../images/afa19fa50240996d441fda41861cd78ab62d92c7.png" alt="Partner Logo 4" class="h-[41px] object-contain">
-              </div>
-          </div>
-      </div>
-    </footer>
 
-  <script src="main.js"></script>
+<div id="footer-placeholder"></div>
+
+
 </body>
 </html>

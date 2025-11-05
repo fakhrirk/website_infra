@@ -118,58 +118,14 @@
     .footer-links a:hover { padding-left: 25px; }
     .footer-links a:hover::before { left: 0; opacity: 1; }
   </style>
+
+  <script src="/js/loader.js" defer></script>
 </head>
 <body class="font-figtree bg-white text-text-dark overflow-x-hidden">
   <div class="custom-cursor"></div>
   <div class="cursor-follower"></div>
 
-  <div class="w-full mx-auto relative">
-    <header class="main-header bg-dark-blue h-[90px] flex items-center sticky top-0 z-50 w-full transition-shadow duration-300 ease-in-out px-5 md:px-10 lg:px-[110px]">
-      <div class="flex justify-between items-center w-full max-w-[1220px] mx-auto">
-        <a href="../index.html" class="logo">
-          <img src="../images/logo_idn.png" alt="IDN Boarding School Logo" class="h-[50px] transition-transform duration-300 ease-in-out hover:scale-110">
-        </a>
-        <nav class="main-nav hidden lg:flex items-center gap-4">
-          <a href="../index.html#hero-about" class="text-white text-lg font-normal flex items-center gap-2 py-3 px-3.5 rounded-lg transition-all duration-300 ease-in-out relative hover:bg-white/10 hover:-translate-y-0.5">Beranda</a>
-          <a href="../ppdb.html" class="text-white text-lg font-normal flex items-center gap-2 py-3 px-3.5 rounded-lg transition-all duration-300 ease-in-out relative hover:bg-white/10 hover:-translate-y-0.5">PPDB</a>
-          <div class="relative group">
-    <a href="#majors" class="text-white text-lg font-normal flex items-center gap-2 py-3 px-3.5 rounded-lg transition-all duration-300 ease-in-out relative hover:bg-white/10 hover:-translate-y-0.5">
-      Kurikulum 
-      <img src="../images/I8931_31074_8931_30754_8039_20104.svg" alt="dropdown" class="w-6 h-6 transition-transform duration-300 ease-in-out group-hover:rotate-180">
-    </a>
-    <div class="dropdown-menu absolute top-full mt-2 w-48 bg-dark-blue rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0">
-      <a href="../kurikulumsmp.html" class="block px-5 py-3 text-white hover:bg-primary-blue rounded-t-lg">SMP</a>
-      <a href="../Akademik_Smk/index.html" class="block px-5 py-3 text-white hover:bg-primary-blue rounded-b-lg">SMK</a>
-    </div>
-  </div>
-          <div class="relative group">
-    <a href="#projects" class="text-white text-lg font-normal flex items-center gap-2 py-3 px-3.5 rounded-lg transition-all duration-300 ease-in-out relative hover:bg-white/10 hover:-translate-y-0.5">
-      Program 
-      <img src="../images/I8931_31074_8931_30755_8039_20104.svg" alt="dropdown" class="w-6 h-6 transition-transform duration-300 ease-in-out group-hover:rotate-180">
-    </a>
-    <div class="dropdown-menu absolute top-full mt-2 w-56 bg-dark-blue rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0">
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue rounded-t-lg">Backpacker</a>
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue">Ekstrakurikuler</a>
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue">Internasional</a>
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue">IDN Mengajar</a>
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue">Live In</a>
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue">Business Survival</a>
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue">Edurace</a>
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue">IDN Bersyukur</a>
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue">LDKS</a>
-      <a href="#" class="block px-5 py-3 text-white hover:bg-primary-blue rounded-b-lg">IT Camp</a>
-    </div>
-  </div>
-          <a href="#" class="text-white text-lg font-bold flex items-center gap-2 py-3 px-3.5 rounded-lg transition-all duration-300 ease-in-out relative hover:bg-white/10 hover:-translate-y-0.5">Artikel</a>
-          <a href="https://api.whatsapp.com/send?phone=6282116653328" target="_blank" class="text-white text-lg font-normal flex items-center gap-2 py-3 px-3.5 rounded-lg transition-all duration-300 ease-in-out relative hover:bg-white/10 hover:-translate-y-0.5">Kontak</a>
-        </nav>
-        <button class="mobile-nav-toggle block lg:hidden bg-none border-none cursor-pointer">
-          <span class="block w-[25px] h-[3px] bg-white my-[5px] transition-all duration-300 ease-in-out"></span>
-          <span class="block w-[25px] h-[3px] bg-white my-[5px] transition-all duration-300 ease-in-out"></span>
-          <span class="block w-[25px] h-[3px] bg-white my-[5px] transition-all duration-300 ease-in-out"></span>
-        </button>
-      </div>
-    </header>
+<div id="header-placeholder"></div>
 
     <main id="section-article" class="bg-white py-16 lg:py-24">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -262,129 +218,10 @@
       </div>
     </section>
 
-    <footer id="footer" class="font-figtree">
-      <div class="bg-dark-blue text-white py-[50px]">
-        <div class="container w-full max-w-[1220px] mx-auto px-5 box-border flex flex-col lg:flex-row justify-between gap-[60px]">
-          <div class="max-w-[360px] flex flex-col gap-[30px] items-start animate-slide-left">
-            <img src="../images/logo_idn.png" alt="IDN Boarding School Logo" class="h-[81px] transition-transform duration-300 ease-in-out hover:scale-110">
-            <p class="text-base leading-6 font-medium">lembaga pendidikan berbasis IT yang memandang pendidikan sebagai investasi terbaik dalam kehidupan manusia, karena melalui pendidikan, kita dapat membangun karakter dan peradaban yang lebih maju.</p>
-            <div class="flex gap-6">
-              <a href="https://www.instagram.com/idnboardingschool/" target="_blank" class="transition-transform duration-300 ease-in-out hover:-translate-y-1"><img src="../images/8836_1040.svg" alt="Instagram" class="w-[30px] h-[30px]"></a>
-              <a href="https://api.whatsapp.com/send?phone=6281216653328" target="_blank" class="transition-transform duration-300 ease-in-out hover:-translate-y-1"><img src="../images/8836_1041.svg" alt="WhatsApp" class="w-[30px] h-[30px]"></a>
-              <a href="https://www.facebook.com/idnboardingschool/?locale=id_ID" target="_blank" class="transition-transform duration-300 ease-in-out hover:-translate-y-1"><img src="../images/8836_1042.svg" alt="Facebook" class="w-[30px] h-[30px]"></a>
-              <a href="https://www.youtube.com/@IDNTV2022" class="transition-transform duration-300 ease-in-out hover:-translate-y-1"><img src="../images/8836_1043.svg" alt="YouTube" class="w-[30px] h-[30px]"></a>
-            </div>
-          </div>
-          <div class="footer-links flex flex-col md:flex-row gap-[30px] md:gap-[60px] animate-slide-right">
-            <nav class="flex flex-col gap-3">
-              <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">PPDB</a>
-              <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Akademik SMK</a>
-              <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Akademik SMP</a>
-              <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Ekstrakurikuler</a>
-              <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Program Internasional</a>
-              <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Backpacker</a>
-              <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">IDN Mengajar</a>
-              <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Live In</a>
-            </nav>
-            <nav class="flex flex-col gap-3">
-              <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Susur Goa</a>
-              <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Business Survival</a>
-              <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Edurace</a>
-              <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">IDN Bersyukur</a>
-              <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">LDKS</a>
-              <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">IT Camp</a>
-              <a href="#" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Artikel</a>
-              <a href="https://api.whatsapp.com/send?phone=6282116653328" target="_blank" class="text-xl leading-7 font-normal transition-all duration-300 ease-in-out relative hover:text-accent-orange">Kontak</a>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div class="bg-white py-2.5">
-        <div class="container w-full max-w-[1220px] mx-auto px-5 box-border flex flex-col md:flex-row justify-between items-center gap-5">
-          <p class="font-poppins text-sm text-[#535353] font-light">© Copyright 2025 - <strong class="font-semibold text-blue-500">IDN Boarding School</strong></p>
-          <div class="flex items-center gap-4">
-            <img src="../images/016698a76ad9a32430b855f5b14e67f975aa7f1d.png" alt="Partner Logo 1" class="h-[41px] object-contain">
-            <img src="../images/ff4dd3f58988e9c84b9bb141610e22b15ccd7517.png" alt="Partner Logo 2" class="h-[41px] object-contain">
-            <img src="../images/7aa61f391f8a3e5ee44b96311384f438a35fda38.png" alt="Partner Logo 3" class="h-[41px] object-contain">
-            <img src="../images/afa19fa50240996d441fda41861cd78ab62d92c7.png" alt="Partner Logo 4" class="h-[41px] object-contain">
-          </div>
-        </div>
-      </div>
-    </footer>
+    <div id="footer-placeholder"></div>
+         
   </div>
 
-  <script>
-    // Custom Cursor
-    const cursorRing = document.querySelector('.custom-cursor');
-    const cursorDot = document.querySelector('.cursor-follower');
-    let mouseX = 0;
-    let mouseY = 0;
-    let ringX = 0;
-    let ringY = 0;
-    let dotX = 0;
-    let dotY = 0;
-    const ringSpeed = 0.10;
-    const dotSpeed = 0.7;
-    document.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      if (!cursorRing.classList.contains('active')) {
-        cursorRing.classList.add('active');
-        cursorDot.classList.add('active');
-      }
-    });
-    document.addEventListener('mouseleave', () => {
-      cursorRing.classList.remove('active');
-      cursorDot.classList.remove('active');
-    });
-    function animateCursor() {
-      ringX += (mouseX - ringX) * ringSpeed;
-      ringY += (mouseY - ringY) * ringSpeed;
-      dotX += (mouseX - dotX) * dotSpeed;
-      dotY += (mouseY - dotY) * dotSpeed;
-      cursorRing.style.left = ringX + 'px';
-      cursorRing.style.top = ringY + 'px';
-      cursorDot.style.left = dotX + 'px';
-      cursorDot.style.top = dotY + 'px';
-      requestAnimationFrame(animateCursor);
-    }
-    animateCursor();
-    document.addEventListener('mousedown', () => {
-      cursorRing.classList.add('clicked');
-      cursorDot.classList.add('clicked');
-    });
-    document.addEventListener('mouseup', () => {
-      cursorRing.classList.remove('clicked');
-      cursorDot.classList.remove('clicked');
-    });
-
-    // Hover effect listeners for cursor
-    const hoverElements = document.querySelectorAll('a, button, .btn, .major-card, .project-card, .achievement-card, .branch-card, .logo-box, .logo, blockquote, .timeline-dot');
-    hoverElements.forEach(el => {
-      el.addEventListener('mouseenter', () => cursorRing.classList.add('hover'));
-      el.addEventListener('mouseleave', () => cursorRing.classList.remove('hover'));
-    });
-
-    // Scroll Animations
-    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -100px 0px' };
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animated');
-        }
-      });
-    }, observerOptions);
-    // Tambahkan elemen dari halaman artikel ke observer
-    const animatedElements = document.querySelectorAll('.animate-on-scroll, .animate-fade-in, .animate-slide-left, .animate-slide-right, .animate-scale');
-    animatedElements.forEach(el => observer.observe(el));
-
-    // Header scroll effect
-    const header = document.querySelector('.main-header');
-    window.addEventListener('scroll', () => {
-      if (header) {
-        window.pageYOffset > 50 ? header.classList.add('scrolled') : header.classList.remove('scrolled');
-      }
-    });
-  </script>
+  
 </body>
 </html>

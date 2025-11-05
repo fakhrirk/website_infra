@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <title>IDN Boarding School - Program IDN Mengajar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Poppins:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-blue": "#1c4cd0",
+              "dark-blue": "#0e2464",
+              "light-blue": "#5879ff",
+              "text-dark": "#181d27",
+              "text-gray": "#717680",
+              "text-light": "#d5d7da",
+              "background-gray": "#f5f5f5",
+              "accent-orange": "#f59e0b",
+              "danger-red": "#d92d21",
+              // Menambahkan warna dari halaman PPDB untuk konsistensi jika diperlukan
+              "brand-dark-blue": "#0e2464",
+              "brand-blue": "#1c4cd0",
+              "brand-gradient-from": "#0126b9",
+              "brand-gradient-to": "#5879ff",
+              "brand-accent": "#f59e0b",
+              "brand-muted": "#717680",
+              "brand-light-muted": "#d5d7da",
+              "brand-danger": "#d92d21",
+            },
+            fontFamily: {
+              figtree: ["Figtree", "sans-serif"],
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      body {
+        font-family: "Figtree", "sans-serif";
+      }
+      /* Custom styles from Halaman Utama for animations */
+      .main-nav a::after {
+        content: "";
+        position: absolute;
+        bottom: 8px;
+        left: 14px;
+        right: 14px;
+        height: 2px;
+        background-color: white;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+      }
+      .main-nav a:hover::after,
+      .dropdown-container:hover > a::after {
+        transform: scaleX(1);
+      }
+      .dropdown-menu {
+        will-change: opacity, transform;
+      }
+      .mobile-nav-toggle span {
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      }
+      .mobile-nav-toggle.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      .mobile-nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+      }
+      .mobile-nav-toggle.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+      .footer-links a::before {
+        content: "→";
+        position: absolute;
+        left: -20px;
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+      .footer-links a:hover {
+        padding-left: 25px;
+      }
+      .footer-links a:hover::before {
+        left: 0;
+        opacity: 1;
+      }
+    </style>
+
+    <script src="/js/loader.js" defer></script>
+  </head>
+  <body class="font-figtree bg-white text-text-dark overflow-x-hidden">
+    <div id="header-placeholder"></div>
+
+    <main>
+      <section
+        id="hero"
+        class="bg-gradient-to-r from-brand-gradient-from to-brand-gradient-to py-20 text-white lg:py-32"
+      >
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div
+            class="mx-auto flex max-w-4xl flex-col items-center gap-6 text-start"
+          >
+            <h1
+              class="font-poppins text-5xl font-semibold leading-tight lg:text-6xl"
+            >
+              IDN Mengajar
+            </h1>
+            <p
+              class="font-figtree text-xl font-medium text-brand-light-muted lg:text-2xl"
+            >
+              IDN Mengajar adalah salah satu program unggulan dari IDN Boarding
+              School yang berfokus pada kegiatan pengabdian masyarakat dalam
+              bidang pendidikan dan teknologi digital. Program ini dirancang
+              untuk memberikan kesempatan kepada para santri IDN — khususnya
+              kelas akhir — untuk berbagi ilmu, pengalaman, dan inspirasi kepada
+              pelajar di sekolah lain. Melalui kegiatan ini, santri tidak hanya
+              belajar menjadi ahli di bidang teknologi, tetapi juga belajar
+              menjadi pendidik dan pemimpin yang memberi manfaat bagi sesama.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="goals" class="bg-white py-20 lg:py-32">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+            <div>
+              <img
+                src="/images/afbfe369ae6c7edc4540fea86576ed2d0f5e5ecc.png"
+                alt="Students in a classroom setting"
+                class="h-auto w-full rounded-2xl object-cover shadow-lg"
+              />
+            </div>
+            <div class="flex flex-col gap-6">
+              <h2
+                class="font-poppins mb-4 text-4xl font-bold text-brand-blue md:text-5xl"
+              >
+                Tujuan IDN Mengajar
+              </h2>
+              <ul class="space-y-6">
+                <li class="flex flex-col gap-1">
+                  <strong class="text-xl font-semibold text-text-dark"
+                    >Meningkatkan Kepedulian Sosial</strong
+                  >
+                  <p class="text-lg leading-relaxed text-text-gray">
+                    Mendorong santri untuk turun langsung ke masyarakat dan
+                    memahami pentingnya berbagi ilmu sebagai bentuk dakwah dan
+                    kontribusi sosial.
+                  </p>
+                </li>
+                <li class="flex flex-col gap-1">
+                  <strong class="text-xl font-semibold text-text-dark"
+                    >Melatih Kemampuan Mengajar & Komunikasi</strong
+                  >
+                  <p class="text-lg leading-relaxed text-text-gray">
+                    Santri dilatih untuk menyampaikan materi dengan cara yang
+                    menarik, jelas, dan mudah dipahami — sebagai bekal untuk
+                    menjadi mentor atau pemimpin di masa depan.
+                  </p>
+                </li>
+                <li class="flex flex-col gap-1">
+                  <strong class="text-xl font-semibold text-text-dark"
+                    >Menerapkan Ilmu Secara Nyata</strong
+                  >
+                  <p class="text-lg leading-relaxed text-text-gray">
+                    Ilmu yang dipelajari di IDN seperti desain grafis, UI/UX,
+                    pemrograman, dan digital marketing diterapkan secara
+                    langsung dalam pembelajaran di luar lingkungan sekolah.
+                  </p>
+                </li>
+                <li class="flex flex-col gap-1">
+                  <strong class="text-xl font-semibold text-text-dark"
+                    >Membangun Relasi & Kolaborasi</strong
+                  >
+                  <p class="text-lg leading-relaxed text-text-gray">
+                    Melalui kegiatan ini, IDN menjalin hubungan baik dengan
+                    sekolah-sekolah mitra serta memperluas jaringan pembelajaran
+                    Islami berbasis teknologi.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="benefits" class="bg-background-gray py-20 lg:py-32">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+            <div class="flex flex-col gap-6 lg:order-2">
+              <h2
+                class="font-poppins mb-4 text-4xl font-bold text-brand-blue md:text-5xl"
+              >
+                Manfaat IDN Mengajar
+              </h2>
+              <ul class="space-y-6">
+                <li class="flex flex-col gap-1">
+                  <strong class="text-xl font-semibold text-text-dark"
+                    >Bagi Santri IDN:</strong
+                  >
+                  <p class="text-lg leading-relaxed text-text-gray">
+                    Mereka memperoleh pengalaman nyata dalam mengajar, mengasah
+                    public speaking, leadership, dan kemampuan adaptasi di
+                    lingkungan baru.
+                  </p>
+                </li>
+                <li class="flex flex-col gap-1">
+                  <strong class="text-xl font-semibold text-text-dark"
+                    >Bagi Sekolah Mitra (Seperti SMA IT Plus Bazma
+                    Brilliant):</strong
+                  >
+                  <p class="text-lg leading-relaxed text-text-gray">
+                    Siswa mendapatkan wawasan baru tentang dunia digital,
+                    desain, dan teknologi dari perspektif pelajar yang seusia
+                    namun sudah berpengalaman di bidangnya.
+                  </p>
+                </li>
+                <li class="flex flex-col gap-1">
+                  <strong class="text-xl font-semibold text-text-dark"
+                    >Bagi Masyarakat Umum:</strong
+                  >
+                  <p class="text-lg leading-relaxed text-text-gray">
+                    Program ini menjadi bentuk nyata bahwa santri modern dapat
+                    menjadi agen perubahan — bukan hanya memahami agama, tetapi
+                    juga mampu membawa nilai Islam ke dunia digital.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="lg:order-1">
+              <img
+                src="/images/aa1559c6923a3898dac97509341c036e59550300.png"
+                alt="A student presenting in front of a screen"
+                class="h-auto w-full rounded-2xl object-cover shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="values" class="bg-white py-20 lg:py-32">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+            <div>
+              <img
+                src="/images/92942522dec13a92caa55d2ea2b8c84b501186cf.png"
+                alt="Students listening to a lesson"
+                class="h-auto w-full rounded-2xl object-cover shadow-lg"
+              />
+            </div>
+            <div class="flex flex-col gap-6">
+              <h2
+                class="font-poppins mb-4 text-4xl font-bold text-brand-blue md:text-5xl"
+              >
+                Nilai & Filosofi yang Dibawa
+              </h2>
+              <p class="text-lg leading-relaxed text-text-gray">
+                Program IDN Mengajar berpegang pada prinsip “Ilmu yang
+                Bermanfaat dan Amal yang Menginspirasi.” <br />
+                Artinya, setiap santri IDN diharapkan tidak hanya fokus pada
+                pencapaian akademik atau teknikal, tetapi juga memiliki niat
+                untuk berdakwah melalui ilmu.
+              </p>
+              <p class="text-lg leading-relaxed text-text-gray">
+                Kegiatan ini mencerminkan tiga nilai utama pendidikan IDN
+                Boarding School:<br />Expert di bidangnya – menguasai skill
+                digital, desain, dan teknologi modern.<br />Berkarakter Islami –
+                menjunjung adab, amanah, dan keikhlasan dalam mengajar.<br />Memberi
+                Manfaat untuk Umat – menjadikan ilmu sebagai ladang pahala dan
+                kontribusi bagi masyarakat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="closing" class="bg-background-gray py-20 lg:py-32">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div
+            class="mx-auto flex max-w-4xl flex-col items-center gap-6 text-center"
+          >
+            <h2
+              class="font-poppins mb-4 text-4xl font-bold text-brand-blue md:text-5xl"
+            >
+              Penutup
+            </h2>
+            <p class="text-lg leading-relaxed text-text-gray">
+              Melalui IDN Mengajar, IDN Boarding School menanamkan pada para
+              santri bahwa ilmu bukan hanya untuk diri sendiri, tetapi juga
+              untuk kemajuan umat. Kegiatan ini menjadi jembatan antara
+              teknologi dan nilai-nilai Islam, mencetak generasi muda yang
+              cerdas, berakhlak, dan siap menghadapi tantangan dunia digital
+              dengan semangat berbagi dan berkontribusi.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="bg-white py-24">
+        <div class="mx-auto max-w-4xl px-4">
+          <div class="flex flex-col items-center gap-8 text-center">
+            <h2
+              class="font-poppins text-4xl font-bold text-brand-blue md:text-5xl"
+            >
+              Ayo Daftarkan Sekarang Juga!
+            </h2>
+            <a
+              href="ppdb/ppdb.html"
+              class="inline-flex items-center gap-2.5 rounded-xl bg-brand-accent px-8 py-4 text-lg font-semibold text-white shadow-lg transition-colors hover:bg-amber-600"
+            >
+              <span>Daftar Santri Baru</span>
+              <img
+                src="/images/I9231_65876_6048_64342.svg"
+                alt="Arrow right icon"
+                class="h-6 w-6"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="location"
+        class="bg-gradient-to-r from-brand-gradient-from to-brand-gradient-to py-24"
+      >
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="flex flex-col items-center gap-12">
+            <h2 class="text-center text-3xl font-bold text-white">
+              Lokasi IDN Boarding School
+            </h2>
+            <img
+              src="/images/f170e40ae0fa1d3aa60ebde43db4ddf07490887b.png"
+              alt="Map showing the location of IDN Boarding School"
+              class="w-full rounded-2xl shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+  </body>
+</html>

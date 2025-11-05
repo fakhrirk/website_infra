@@ -6,6 +6,7 @@ tailwind.config = {
               figtree: ["Figtree", "sans-serif"],
             },
             colors: {
+              'dark-blue': '#0e2464',
               "brand-blue-dark": "#0e2464",
               "brand-blue": "#1c4cd0",
               "brand-blue-light": "#1c4cd0",
