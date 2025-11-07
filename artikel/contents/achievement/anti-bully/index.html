@@ -3,123 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artikel - IDN Boarding School</title>
+  <title>Deklarasi Anti-Bullying - IDN Boarding School</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
   <script src="https://cdn.tailwindcss.com"></script>
-  
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'primary-blue': '#1c4cd0',
-            'dark-blue': '#0e2464',
-            'light-blue': '#5879ff',
-            'text-dark': '#181d27',
-            'text-gray': '#717680',
-            'text-light': '#d5d7da',
-            'background-gray': '#f5f5f5',
-            'accent-orange': '#f59e0b',
-            'danger-red': '#d92d21',
-          },
-          fontFamily: {
-            figtree: ['Figtree', 'sans-serif'],
-            poppins: ['Poppins', 'sans-serif'],
-          },
-        }
-      }
-    }
-  </script>
-
-  <style>
-    body{
-      cursor: none;
-    }
-    /* Custom Cursor */
-    .custom-cursor {
-      width: 40px;
-      height: 40px;
-      border: 2px solid #4873e9;
-      border-radius: 50%;
-      position: fixed;
-      pointer-events: none;
-      z-index: 9999;
-      transition: transform 0.1s ease-out, opacity 0.2s ease-out;
-      opacity: 0;
-      transform: translate(-50%, -50%);
-    }
-    .custom-cursor.active { opacity: 1; }
-    .custom-cursor.hover {
-      transform: translate(-50%, -50%) scale(1.2);
-      background-color: #1c4cd037;
-    }
-    .cursor-follower {
-      width: 8px;
-      height: 8px;
-      background-color: #4873e9;
-      border-radius: 50%;
-      position: fixed;
-      pointer-events: none;
-      z-index: 9998;
-      transition: transform 0.2s ease-out;
-      opacity: 0;
-      transform: translate(-50%, -50%);
-    }
-    
-    .cursor-follower.active { opacity: 1; }
-    .custom-cursor.clicked {
-        transform: translate(-50%, -50%) scale(0.9);
-        background-color: rgba(28, 76, 208, 0.2);
-    }
-    .cursor-follower.clicked {
-        transform: translate(-50%, -50%) scale(0.5);
-    }
-    .parallax-element { transition: transform 0.3s ease-out; }
-    .animate-on-scroll { opacity: 0; transform: translateY(50px); transition: opacity 0.8s ease, transform 0.8s ease; }
-    .animate-on-scroll.animated { opacity: 1; transform: translateY(0); }
-    .animate-fade-in { opacity: 0; transition: opacity 1s ease; }
-    .animate-fade-in.animated { opacity: 1; }
-    .animate-slide-left { opacity: 0; transform: translateX(-50px); transition: opacity 0.8s ease, transform 0.8s ease; }
-    .animate-slide-left.animated { opacity: 1; transform: translateX(0); }
-    .animate-slide-right { opacity: 0; transform: translateX(50px); transition: opacity 0.8s ease, transform 0.8s ease; }
-    .animate-slide-right.animated { opacity: 1; transform: translateX(0); }
-    .animate-scale { opacity: 0; transform: scale(0.8); transition: opacity 0.8s ease, transform 0.8s ease; }
-    .animate-scale.animated { opacity: 1; transform: scale(1); }
-    .btn::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      border-radius: 50%;
-      background-color: rgba(235, 235, 235, 0.279);
-      transform: translate(-50%, -50%);
-      transition: width 0.6s ease, height 0.6s ease;
-    }
-    .btn:hover::before { width: 300px; height: 300px; }
-    .main-nav a::after {
-      content: '';
-      position: absolute;
-      bottom: 8px;
-      left: 14px;
-      right: 14px;
-      height: 2px;
-      background-color: white;
-      transform: scaleX(0);
-      transition: transform 0.3s ease;
-    }
-    .main-nav a:hover::after, .main-nav a.active::after { transform: scaleX(1); }
-    .main-header.scrolled { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); }
-    .footer-links a::before { content: '→'; position: absolute; left: -20px; opacity: 0; transition: all 0.3s ease; }
-    .footer-links a:hover { padding-left: 25px; }
-    .footer-links a:hover::before { left: 0; opacity: 1; }
-  </style>
-
   <script src="/js/loader.js" defer></script>
+  <script src="js/tailwindcss.js"></script>
 </head>
 <body class="font-figtree bg-white text-text-dark overflow-x-hidden">
   <div class="custom-cursor"></div>
@@ -180,7 +71,7 @@
             <h2 class="font-figtree font-semibold text-black text-3xl leading-snug">Mau jadi langganan juara kompetisi dan dibimbing di Boarding School Islami terbaik?</h2>
             <div class="font-figtree font-medium text-xl text-gray-500 leading-8 space-y-4 text-left break-words">
               <p>
-                Baca juga artikel lain tentang prestasi siswa SMK IDN <a href="#" class="underline hover:text-primary-blue">di sini</a>.<br />Semoga bermanfaat.<br />Kunjungi youtube kami<br /><a
+                Baca juga artikel lain tentang prestasi siswa SMK IDN <a href="../../home_artikel/index.html" class="underline hover:text-primary-blue">di sini</a>.<br />Semoga bermanfaat.<br />Kunjungi youtube kami<br /><a
                   href="https://www.youtube.com/@IDNTV2022"
                   class="underline break-all hover:text-primary-blue"
                   >https://www.youtube.com/@IDNTV2022</a
@@ -191,9 +82,9 @@
                 Solo<br />– Sentul<br />-Jonggol<br />-Akhwat<br />-Malang
               </p>
               <p>
-                Kita Sharing Bareng Yuk<br />Like, Comment & Share<br />Mau Tau Lebih Banyak Edukasi Bermanfaat?<br />Follow sosial media kami:<br />Jonggol: <a href="#" class="underline hover:text-primary-blue">@idnboardingschool</a
-                ><br />Solo: <a href="#" class="underline hover:text-primary-blue">@idnboardingschoolsolo</a><br />Pamijahan: <a href="#" class="underline hover:text-primary-blue">@idnboardingschoolpmjbogor</a><br />Sentul:
-                <a href="#" class="underline hover:text-primary-blue">@idnboardingschoolsentul</a><br />idn akhwat : <a href="#" class="underline hover:text-primary-blue">@smpsmk.idnakhwat</a>
+                Kita Sharing Bareng Yuk<br />Like, Comment & Share<br />Mau Tau Lebih Banyak Edukasi Bermanfaat?<br />Follow sosial media kami:<br />Jonggol: <a href="https://www.instagram.com/idnboardingschool/" class="underline hover:text-primary-blue">@idnboardingschool</a
+                ><br />Solo: <a href="https://www.instagram.com/idnboardingschoolsolo/" class="underline hover:text-primary-blue">@idnboardingschoolsolo</a><br />Pamijahan: <a href="https://www.instagram.com/idnboardingschoolpmjbogor/" class="underline hover:text-primary-blue">@idnboardingschoolpmjbogor</a><br />Sentul:
+                <a href="https://www.instagram.com/idnboardingschoolsentul/" class="underline hover:text-primary-blue">@idnboardingschoolsentul</a><br />idn akhwat : <a href="https://www.instagram.com/smpsmk.idnakhwat/" class="underline hover:text-primary-blue">@smpsmk.idnakhwat</a>
               </p>
             </div>
           </div>
