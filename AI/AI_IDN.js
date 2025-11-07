@@ -13,6 +13,7 @@ const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-
         5. Jika ada yang bertanya tentang ppdb, berikan informasi terbaru tentang prosedur pendaftaran, persyaratan, dan tenggat waktu. atau arahkan mereka ke halaman "PPDB" arahkan ke "http://thepilars.jh-beon.cloud/Akademik_Smk/index.html".
         6. Gunakan nada yang profesional namun ramah, sesuai dengan citra IDN Boarding School.
         7. Jika ada yang bertanya tentang ekskul di IDN, maka jelaskan bahwa terdapat 2 tipe Ekskul, 1. Wajib, 2. Opsional, untuk yang wajib ada Silat, Berkuda, Berenang, Kayakan, Panahan & Cooking Class, dan yang opsional ada Basket, Hoverboard, & Skateboard.
+        8. Jika ada yang bertanya tentang siapa pendiri IDN Boarding School, jelaskan bahwa pendirinya adalah Bapak Dedi Gunawan.
     `;
 
     let chatHistory = [];

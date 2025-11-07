@@ -1,5 +1,4 @@
 
-
 const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
 const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -10,27 +9,62 @@ const toggleMenu = () => {
   
   if (isMenuOpen) {
     // Tampilkan menu
-    mobileMenu.classList.remove('invisible', '-translate-x-full');
+    mobileMenu.classList.remove('invisible', '-translate-x-full', 'opacity-0');
     mobileMenu.classList.add('visible', 'translate-x-0', 'opacity-100');
     document.body.style.overflow = 'hidden'; // Mencegah scroll body
   } else {
     // Sembunyikan menu
     mobileMenu.classList.remove('visible', 'translate-x-0', 'opacity-100');
-    mobileMenu.classList.add('invisible', '-translate-x-full');
+    mobileMenu.classList.add('invisible', '-translate-x-full', 'opacity-0');
     document.body.style.overflow = ''; // Mengizinkan scroll body kembali
   }
 };
 
-mobileNavToggle.addEventListener('click', toggleMenu);
+// Pastikan elemen .mobile-nav-toggle ada
+if (mobileNavToggle) {
+    mobileNavToggle.addEventListener('click', toggleMenu);
+}
 
 // Menutup menu saat salah satu link di-klik (opsional tapi disarankan)
 mobileLinks.forEach(link => {
     link.addEventListener('click', () => {
-        if (mobileNavToggle.classList.contains('active')) {
+        if (mobileNavToggle && mobileNavToggle.classList.contains('active')) {
             toggleMenu();
         }
     });
 });
+
+// Fungsi dropdown Anda (sudah benar, tidak perlu diubah)
+function toggleDropdown(id) {
+  const dropdown = document.getElementById(`dropdown-${id}`);
+  const arrow = document.getElementById(`arrow-${id}`);
+
+  if (dropdown.classList.contains('max-h-0')) {
+    dropdown.classList.remove('max-h-0', 'opacity-0');
+    dropdown.classList.add('max-h-[1000px]', 'opacity-100');
+    arrow.classList.add('rotate-180');
+  } else {
+    dropdown.classList.add('max-h-0', 'opacity-0');
+    dropdown.classList.remove('max-h-[1000px]', 'opacity-100');
+    arrow.classList.remove('rotate-180');
+  }
+}
+
+// Fungsi dropdown Anda (sudah benar, tidak perlu diubah)
+function toggleDropdown(id) {
+  const dropdown = document.getElementById(`dropdown-${id}`);
+  const arrow = document.getElementById(`arrow-${id}`);
+
+  if (dropdown.classList.contains('max-h-0')) {
+    dropdown.classList.remove('max-h-0', 'opacity-0');
+    dropdown.classList.add('max-h-[1000px]', 'opacity-100');
+    arrow.classList.add('rotate-180');
+  } else {
+    dropdown.classList.add('max-h-0', 'opacity-0');
+    dropdown.classList.remove('max-h-[1000px]', 'opacity-100');
+    arrow.classList.remove('rotate-180');
+  }
+}
 
   // Custom Cursor
   const cursorRing = document.querySelector('.custom-cursor');

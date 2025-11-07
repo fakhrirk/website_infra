@@ -1,5 +1,4 @@
 
-
 const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
 const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -10,28 +9,46 @@ const toggleMenu = () => {
   
   if (isMenuOpen) {
     // Tampilkan menu
-    mobileMenu.classList.remove('invisible', '-translate-x-full');
+    mobileMenu.classList.remove('invisible', '-translate-x-full', 'opacity-0');
     mobileMenu.classList.add('visible', 'translate-x-0', 'opacity-100');
     document.body.style.overflow = 'hidden'; // Mencegah scroll body
   } else {
     // Sembunyikan menu
     mobileMenu.classList.remove('visible', 'translate-x-0', 'opacity-100');
-    mobileMenu.classList.add('invisible', '-translate-x-full');
+    mobileMenu.classList.add('invisible', '-translate-x-full', 'opacity-0');
     document.body.style.overflow = ''; // Mengizinkan scroll body kembali
   }
 };
 
-mobileNavToggle.addEventListener('click', toggleMenu);
+// Pastikan elemen .mobile-nav-toggle ada
+if (mobileNavToggle) {
+    mobileNavToggle.addEventListener('click', toggleMenu);
+}
 
 // Menutup menu saat salah satu link di-klik (opsional tapi disarankan)
 mobileLinks.forEach(link => {
     link.addEventListener('click', () => {
-        if (mobileNavToggle.classList.contains('active')) {
+        if (mobileNavToggle && mobileNavToggle.classList.contains('active')) {
             toggleMenu();
         }
     });
 });
 
+// Fungsi dropdown Anda (sudah benar, tidak perlu diubah)
+function toggleDropdown(id) {
+  const dropdown = document.getElementById(`dropdown-${id}`);
+  const arrow = document.getElementById(`arrow-${id}`);
+
+  if (dropdown.classList.contains('max-h-0')) {
+    dropdown.classList.remove('max-h-0', 'opacity-0');
+    dropdown.classList.add('max-h-[1000px]', 'opacity-100');
+    arrow.classList.add('rotate-180');
+  } else {
+    dropdown.classList.add('max-h-0', 'opacity-0');
+    dropdown.classList.remove('max-h-[1000px]', 'opacity-100');
+    arrow.classList.remove('rotate-180');
+  }
+}
   // Custom Cursor
   const cursorRing = document.querySelector('.custom-cursor');
   const cursorDot = document.querySelector('.cursor-follower');
@@ -119,7 +136,7 @@ mobileLinks.forEach(link => {
       }
     });
   }, observerOptions);
-  const animatedElements = document.querySelectorAll('.animate-on-scroll, .animate-fade-in, .animate-slide-left, .animate-slide-right, .animate-slide-down, .animate-scale');
+  const animatedElements = document.querySelectorAll('.animate-on-scroll, .animate-fade-in, .animate-slide-left, .animate-slide-right, .animate-scale');
   animatedElements.forEach(el => observer.observe(el));
 
   // Header scroll effect
@@ -336,19 +353,19 @@ branchCards.forEach(card => {
 const projectsData = {
   dkv: [
     {
-      image: '../images/76e803f72748c92743ac8e76d8c672f488b9ada0.png',
+      image: 'images/76e803f72748c92743ac8e76d8c672f488b9ada0.png',
       title: 'Web Design',
       description: 'Craft Engaging, User Friendly Website, provide the best website for user.',
       tags: ['Landing Page', 'School Website', 'Portfolio']
     },
     {
-      image: '../images/0894bad173f73a2fff816853a3f05614630e0dfc.png',
+      image: 'images/0894bad173f73a2fff816853a3f05614630e0dfc.png',
       title: 'UI/UX Design',
       description: 'Create Simple, User Friendly App, also with the Feature and others.',
       tags: ['UI Design', 'UX Design', 'Prototype', 'Product Design', 'User Flow']
     },
     {
-      image: '../images/6d0dc842ceb4601ba70f047c1a7478ba5822bf04.png',
+      image: 'images/6d0dc842ceb4601ba70f047c1a7478ba5822bf04.png',
       title: 'Graphic Design',
       description: 'Make an Amazing & Beneficial Design, that is useful for user property.',
       tags: ['UI Design', 'UX Design', 'Prototype', 'Product Design', 'User Flow']
@@ -356,19 +373,19 @@ const projectsData = {
   ],
   tkj: [
     {
-      image: '../images/routing.png',
+      image: 'images/routing.png',
       title: 'Routing',
       description: 'Build your network, master digital connections with Cisco certification.',
       tags: ['Topology', 'Cisco', 'Packet Tracer']
     },
     {
-      image: '../images/tkj_certification.png',
+      image: 'images/tkj_certification.png',
       title: 'Certification',
       description: 'Master modern networking technology and earn an international certification.',
       tags: ['Networking', 'Experience', 'Certification', 'Cisco', 'Knowledge']
     },
     {
-      image: '../images/switching.png',
+      image: 'images/switching.png',
       title: 'Switching',
       description: 'Strong routing, fast switching — your future stays connected.',
       tags: ['Data', 'Layer', 'Packet', 'Switch', 'Hardware']
@@ -376,19 +393,19 @@ const projectsData = {
   ],
   rpl: [
     {
-      image: '../images/web_dev.png',
+      image: 'images/web_dev.png',
       title: 'Website Dev',
       description: 'Developing Website using the HTML, CSS & JavaScript Language.',
       tags: ['Landing Page', 'Dashboard', 'Absention Website']
     },
     {
-      image: '../images/mobile_app.png',
+      image: 'images/mobile_app.png',
       title: 'Mobile Application',
       description: 'Develop cross-platform mobile apps with beautiful UI and smooth performance.',
       tags: ['Mobile', 'Application', 'Printing App', 'E-Commerce', 'Shop']
     },
     {
-      image: '../images/rpl_certification.png',
+      image: 'images/rpl_certification.png',
       title: 'Certification',
       description: 'Create complete solutions from frontend to backend with modern frameworks.',
       tags: ['Course', 'Certification', 'Code', 'Knowledge', 'Experience']
@@ -500,7 +517,6 @@ allPopupCards.forEach(card => {
     event.stopPropagation(); // Prevents the click from reaching the backdrop
   });
 });  
-
 
     function toggleDropdown(id) {
     const dropdown = document.getElementById(`dropdown-${id}`);
