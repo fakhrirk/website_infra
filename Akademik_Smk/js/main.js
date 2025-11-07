@@ -500,17 +500,3 @@ allPopupCards.forEach(card => {
   });
 });  
 
-    function toggleDropdown(id) {
-    const dropdown = document.getElementById(`dropdown-${id}`);
-    const arrow = document.getElementById(`arrow-${id}`);
-
-    if (dropdown.classList.contains('max-h-0')) {
-      dropdown.classList.remove('max-h-0', 'opacity-0');
-      dropdown.classList.add('max-h-[1000px]', 'opacity-100');
-      arrow.classList.add('rotate-180');
-    } else {
-      dropdown.classList.add('max-h-0', 'opacity-0');
-      dropdown.classList.remove('max-h-[1000px]', 'opacity-100');
-      arrow.classList.remove('rotate-180');
-    }
-  }
