@@ -501,7 +501,8 @@ allPopupCards.forEach(card => {
   });
 });  
 
-  function toggleDropdown(id) {
+
+    function toggleDropdown(id) {
     const dropdown = document.getElementById(`dropdown-${id}`);
     const arrow = document.getElementById(`arrow-${id}`);
 

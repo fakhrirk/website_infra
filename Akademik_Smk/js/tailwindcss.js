@@ -9,6 +9,7 @@ tailwind.config = {
               'dark-blue': '#0e2464',
               "brand-blue-dark": "#0e2464",
               "brand-blue": "#1c4cd0",
+              'primary-blue': '#1c4cd0',
               "brand-blue-light": "#1c4cd0",
               "brand-blue-gradient-from": "#0126b9",
               "brand-blue-gradient-to": "#5879ff",
