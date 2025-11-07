@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IDN Boarding School - PPDB</title>
+    <link rel="stylesheet" href="/ppdb/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,94 +13,14 @@
     />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              "primary-blue": "#1c4cd0",
-              "dark-blue": "#0e2464",
-              "light-blue": "#5879ff",
-              "text-dark": "#181d27",
-              "text-gray": "#717680",
-              "text-light": "#d5d7da",
-              "background-gray": "#f5f5f5",
-              "accent-orange": "#f59e0b",
-              "danger-red": "#d92d21",
-              // Menambahkan warna dari halaman PPDB untuk konsistensi jika diperlukan
-              "brand-dark-blue": "#0e2464",
-              "brand-blue": "#1c4cd0",
-              "brand-gradient-from": "#0126b9",
-              "brand-gradient-to": "#5879ff",
-              "brand-accent": "#f59e0b",
-              "brand-muted": "#717680",
-              "brand-light-muted": "#d5d7da",
-              "brand-danger": "#d92d21",
-            },
-            fontFamily: {
-              figtree: ["Figtree", "sans-serif"],
-              poppins: ["Poppins", "sans-serif"],
-            },
-          },
-        },
-      };
-    </script>
-
-    <style>
-      body {
-        font-family: "Figtree", "sans-serif";
-      }
-      /* Custom styles from Halaman Utama for animations */
-      .main-nav a::after {
-        content: "";
-        position: absolute;
-        bottom: 8px;
-        left: 14px;
-        right: 14px;
-        height: 2px;
-        background-color: white;
-        transform: scaleX(0);
-        transition: transform 0.3s ease;
-      }
-      .main-nav a:hover::after,
-      .dropdown-container:hover > a::after {
-        transform: scaleX(1);
-      }
-      .dropdown-menu {
-        will-change: opacity, transform;
-      }
-      .mobile-nav-toggle span {
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-      }
-      .mobile-nav-toggle.active span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-      }
-      .mobile-nav-toggle.active span:nth-child(2) {
-        opacity: 0;
-      }
-      .mobile-nav-toggle.active span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-      }
-      .footer-links a::before {
-        content: "→";
-        position: absolute;
-        left: -20px;
-        opacity: 0;
-        transition: all 0.3s ease;
-      }
-      .footer-links a:hover {
-        padding-left: 25px;
-      }
-      .footer-links a:hover::before {
-        left: 0;
-        opacity: 1;
-      }
-    </style>
+    <script src="js/tailwindcss.js"></script>
 
     <script src="/js/loader.js" defer></script>
 
   </head>
   <body class="font-figtree bg-white text-text-dark overflow-x-hidden">
+    <div class="custom-cursor"></div>
+  <div class="cursor-follower"></div>
 
     <div id="header-placeholder"></div>
 
@@ -108,7 +29,7 @@
       class="bg-gradient-to-r from-brand-gradient-from to-brand-gradient-to py-32"
     >
       <div
-        class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-16 lg:gap-24 items-center"
+        class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2  gap-16 lg:gap-24 items-center"
       >
         <div class="flex justify-center">
           <img
@@ -143,7 +64,7 @@
             </a>
             <a
               href="#"
-              class="bg-brand-blue text-white border-2 border-white font-semibold px-6 py-4 rounded-xl flex items-center gap-2.5 hover:bg-blue-800 transition-colors"
+              class="bg-accent-orange text-white border-2 border-white font-semibold px-6 py-4 rounded-xl flex items-center gap-2.5 hover:bg-blue-800 transition-colors duration-300"
             >
               <span>Login</span>
               <img
@@ -845,7 +766,7 @@
         </h2>
         <a
           href="#"
-          class="bg-brand-accent text-white font-semibold px-8 py-4 rounded-xl shadow-lg inline-flex items-center gap-2.5 text-lg hover:bg-amber-600 transition-colors"
+          class="btn bg-accent-orange text-white border-none shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] inline-flex justify-center items-center gap-2.5 py-3 md:py-3.5 px-6 md:px-7 rounded-xl font-semibold text-base md:text-lg cursor-pointer transition-all duration-300 ease-in-out relative overflow-hidden hover:-translate-y-1 hover:shadow-lg active:-translate-y-px"
         >
           <span>Daftar Santri Baru</span>
           <img
@@ -856,78 +777,25 @@
         </a>
       </div>
     </section>
-    <section
-      id="section-location"
-      class="bg-gradient-to-r from-brand-gradient-from to-brand-gradient-to py-24"
-    >
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-white font-bold text-3xl text-center mb-12">
-          Lokasi IDN Boarding School
-        </h2>
-        <img
-          src="/images//f170e40ae0fa1d3aa60ebde43db4ddf07490887b.png"
-          alt="Map of IDN Boarding School"
-          class="rounded-2xl shadow-lg w-full"
-        />
+    <section id="location" class="relative overflow-hidden bg-primary-blue py-[60px] md:py-[90px]">
+        <div class="container w-full max-w-[1220px] mx-auto px-5 box-border flex flex-col gap-[60px] items-center">
+            <h3 class="font-semibold text-2xl md:text-3xl text-center text-white animate-fade-in">Lokasi IDN Boarding School</h3>
+      <div class="w-full rounded-lg overflow-hidden shadow-[0_4px_15px_rgba(0,0,0,0.2)] animate-on-scroll">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.9715071589053!2d107.03556067437898!3d-6.5252822934672965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69bc6e5be3d9bd%3A0x6b9881dabd801476!2sSMK%20IDN%20Boarding%20School!5e0!3m2!1sid!2sid!4v1760608092970!5m2!1sid!2sid"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
-    </section>
+        </div>
+      </section>
 
     <div id="footer-placeholder"></div>
 
-<script>
-      // --- SCRIPT UNTUK ACCORDION ALUR PENDAFTARAN ---
-      // (Versi: Buka satu, tutup yang lain, dengan animasi max-height)
-      const accordionItems = document.querySelectorAll(".accordion-item");
-
-      accordionItems.forEach(item => {
-        const header = item.querySelector(".accordion-header");
-        const content = item.querySelector(".accordion-content");
-        const arrow = item.querySelector(".accordion-arrow");
-
-        header.addEventListener("click", () => {
-          const isAlreadyOpen = content.style.maxHeight && content.style.maxHeight !== "0px";
-
-          // Tutup semua item
-          accordionItems.forEach(otherItem => {
-            otherItem.querySelector(".accordion-content").style.maxHeight = "0px"; 
-            otherItem.querySelector(".accordion-arrow").classList.remove("rotate-180"); 
-          });
-
-          // Buka item yang diklik (jika tadi tertutup)
-          if (!isAlreadyOpen) {
-            content.style.maxHeight = content.scrollHeight + "px"; 
-            arrow.classList.add("rotate-180"); 
-          }
-        });
-      });
-
-
-      // --- SCRIPT UNTUK TAB "KEUNIKAN CABANG" ---
-      document.addEventListener("DOMContentLoaded", function () {
-        const tabs = document.querySelectorAll(".tab-button");
-        const tabContents = document.querySelectorAll(".tab-content");
-
-        tabs.forEach((tab) => {
-          tab.addEventListener("click", () => {
-            tabs.forEach((item) => {
-              item.classList.remove(
-                "border",
-                "border-brand-blue",
-                "text-gray-900"
-              );
-              item.classList.add("text-brand-muted");
-            });
-            tabContents.forEach((content) => {
-              content.classList.add("hidden");
-            });
-
-            tab.classList.add("border", "border-brand-blue", "text-gray-900");
-            tab.classList.remove("text-brand-muted");
-            document.getElementById(tab.dataset.tab).classList.remove("hidden");
-          });
-        });
-      });
-
-    </script>
+<script src="js/main.js"></script>
   </body>
 </html>
